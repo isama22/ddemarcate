@@ -6,13 +6,11 @@ import EnterPage from '../../Pages/Enterpage/EnterPage';
 const Home = (props) => {
     return (
         <div className="Home">
-            <div>
                 <p>Home page</p>
                 <Router>
                     <Route exact path="/enter" render={(props) => (
                         <EnterPage {...props}/>)}/>
                 </Router>
-            </div>
         </div>
     )
 }
