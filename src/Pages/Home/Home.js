@@ -7,10 +7,11 @@ const Home = (props) => {
     return (
         <div className="Home">
                 <p>Home page</p>
-                <Router>
+                {/* <Router>
                     <Route exact path="/enter" render={(props) => (
                         <EnterPage {...props}/>)}/>
-                </Router>
+                </Router> */}
+                <Link to="/enter" className="enter"><em>enter</em></Link>
         </div>
     )
 }
