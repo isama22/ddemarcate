@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Home.css';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import EnterPage from '../../Pages/Enterpage/EnterPage';
+import EnterPage from '../../pages/Enterpage/EnterPage';
 
 const Home = (props) => {
     return (
