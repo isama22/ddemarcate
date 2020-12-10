@@ -7,11 +7,12 @@ const Home = (props) => {
     return (
         <div className="Home">
                 <p>Home page</p>
-                {/* <Router>
-                    <Route exact path="/enter" render={(props) => (
-                        <EnterPage {...props}/>)}/>
-                </Router> */}
-                <Link to="/enter" className="enter"><em>enter</em></Link>
+               
+                <div className="main-image">
+                    <div className="enter-box">
+                         <Link to="/enter" className="enter"><em>enter</em></Link>
+                    </div>
+                </div>
         </div>
     )
 }
