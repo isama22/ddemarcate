@@ -1,11 +1,12 @@
 import React from 'react';
 import './EnterPage.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const EnterPage = () => {
   return (
-    <div className="EnterPage">
+    <div className="enterpage">
         <p>enter page</p>
+        <Link to="/">home</Link>
     </div>
   );
 }
