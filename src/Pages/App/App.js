@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../../Pages/Home/Home'
 import EnterPage from '../../Pages/Enterpage/EnterPage';
 import NavBar from '../../components/NavBar/NavBar'
@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <Router>
+        <Switch>
   
           {/* <Route path='/' render={() => (
           <Home />
@@ -28,7 +28,8 @@ class App extends Component {
                 (<EnterPage {...props} />) 
               }
             /> */}
-          <Route exact path='/login' render={() =>
+            
+          <Route path='/login' render={() =>
             <LoginPage
             />
           } />
@@ -37,7 +38,7 @@ class App extends Component {
               history={history}
             />
           } />
-        </Router>
+        </Switch>
       </div>
     );
   }

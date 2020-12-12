@@ -9,6 +9,7 @@ const NavBar = (props) => {
         <span>logged in as: ___</span>
         <Link to="/signup">sign up</Link>
         <Link to="/login">log in</Link>
+        <Link to="/">home</Link>
     </div>
     );
 
