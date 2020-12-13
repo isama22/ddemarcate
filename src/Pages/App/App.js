@@ -16,18 +16,16 @@ class App extends Component {
         <NavBar />
         <Switch>
   
-          {/* <Route path='/' render={() => (
+          <Route exact path='/' render={() => (
           <Home />
-        )} /> */}
-          <Route exact path="/" component={Home} />
-          <Route exact path="/enter" component={EnterPage} />
-          {/* <Route
+        )} />
+          <Route
               exact
               path="/enter"
               render={(props) =>
                 (<EnterPage {...props} />) 
               }
-            /> */}
+            />
             
           <Route path='/login' render={() =>
             <LoginPage
