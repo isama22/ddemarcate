@@ -1,5 +1,7 @@
 const BASE_URL = '/api/users/';
 
+import tokenService from './tokenService';
+
 function signup(user) {
   return fetch(BASE_URL + 'signup', {
     method: 'POST',
@@ -8,10 +10,12 @@ function signup(user) {
   })
   .then(res => {
     if (res.ok) return res.json();
-    // Probably a duplicate email
     throw new Error('Email already taken!');
   })
-  .then(data => data);
+  // Parameter destructuring!
+  .then(({ token }) => {
+    tokenService.setToken(token);
+  });
 }
 
 export default {
