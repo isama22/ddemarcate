@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../../Pages/Home/Home'
@@ -13,24 +13,26 @@ class App extends Component {
     user: userService.getUser()
   }
 
-  render(){
+  render() {
 
     return (
       <div className="App">
-        <NavBar />
+        <NavBar
+          user={this.state.user}
+        />
         <Switch>
-  
+
           <Route exact path='/' render={() => (
-          <Home />
-        )} />
+            <Home />
+          )} />
           <Route
-              exact
-              path="/enter"
-              render={(props) =>
-                (<EnterPage {...props} />) 
-              }
-            />
-            
+            exact
+            path="/enter"
+            render={(props) =>
+              (<EnterPage {...props} />)
+            }
+          />
+
           <Route path='/login' render={() =>
             <LoginPage
             />
