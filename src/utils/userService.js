@@ -1,6 +1,6 @@
+import tokenService from './tokenService';
 const BASE_URL = '/api/users/';
 
-import tokenService from './tokenService';
 
 function signup(user) {
   return fetch(BASE_URL + 'signup', {
@@ -18,6 +18,11 @@ function signup(user) {
   });
 }
 
+function getUser() {
+  return tokenService.getUserFromToken();
+}
+
 export default {
-  signup
+  signup,
+  getUser
 };

@@ -6,9 +6,13 @@ import EnterPage from '../../Pages/Enterpage/EnterPage';
 import NavBar from '../../components/NavBar/NavBar'
 import LoginPage from '../../Pages/LoginPage/LoginPage'
 import SignupPage from '../../Pages/SignupPage/SignupPage'
-// import userService from '../../utils/userService';
+import userService from '../../utils/userService';
 
 class App extends Component {
+  state = {
+    user: userService.getUser()
+  }
+
   render(){
 
     return (
