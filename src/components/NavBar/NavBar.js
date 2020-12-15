@@ -8,13 +8,17 @@ const NavBar = (props) => {
         <div className="nav-container">
             <span>logged in as: {props.user.name}</span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <Link to="/">home</Link>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <Link to="/logout">logout</Link>
         </div>
         :
         <div>
             <Link to="/">home</Link>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <Link to="/signup">sign up</Link>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <Link to="/login">log in</Link>
+            <Link to="/login">log in</Link>
         </div>
     return (
         <div>
