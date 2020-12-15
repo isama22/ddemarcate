@@ -4,7 +4,8 @@ const jwt = require('jsonwebtoken');
 const SECRET = process.env.SECRET;
 
 module.exports = {
-  signup
+  signup,
+  createJWT
 };
 
 async function signup(req, res) {
