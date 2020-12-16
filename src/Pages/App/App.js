@@ -12,13 +12,17 @@ class App extends Component {
   state = {
     user: userService.getUser()
   }
-
+  handleLogout = () => {
+    userService.logout();
+    this.setState({ user: null });
+  }
   render() {
 
     return (
       <div className="App">
         <NavBar
           user={this.state.user}
+          handleLogout={this.handleLogout}
         />
         <Switch>
 

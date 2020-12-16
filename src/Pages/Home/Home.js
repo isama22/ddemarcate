@@ -10,8 +10,6 @@ const Home = (props) => {
             <div className="navbar-home">
                 {/* <NavBar/> */}
             </div>
-                <p>Home page</p>
-               
                 <div className="main-image">
                     <div className="enter-box">
                          <Link to="/enter" className="enter"><em>enter</em></Link>
