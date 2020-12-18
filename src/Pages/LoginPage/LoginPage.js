@@ -20,17 +20,15 @@ class LoginPage extends Component {
   handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await userService.signup(this.state);
+      await userService.login(this.state);
       // Successfully signed up - show GamePage
-      this.props.handleSignupOrLogin();
+      this.propshandleSignupOrLogin();
       this.props.history.push('/');
     } catch (err) {
-      // // Invalid user data (probably duplicate email)
-      // this.props.updateMessage(err.message);
-          // Use a modal or toast in your apps instead of alert
-    alert('Invalid Credentials!');
+      alert('Invalid Credentials!');
     }
   }
+
 
   render() {
     return (
