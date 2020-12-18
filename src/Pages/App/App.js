@@ -16,7 +16,7 @@ class App extends Component {
     userService.logout();
     this.setState({ user: null });
   }
-  handleSignup = () => {
+  handleSignupOrLogin = () => {
     this.setState({user: userService.getUser()});
   }
   render() {
@@ -40,14 +40,16 @@ class App extends Component {
             }
           />
 
-          <Route path='/login' render={() =>
+          <Route path='/login' render={({ history }) =>
             <LoginPage
+            history={history}
+            handleSignupOrLogin={this.handleSignupOrLogin}
             />
           } />
           <Route exact path='/signup' render={({ history }) =>
             <SignupPage
               history={history}
-              handleSignup={this.handleSignup}
+              handleSignupOrLogin={this.handleSignupOrLogin}
 
             />
           } />
