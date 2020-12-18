@@ -21,8 +21,7 @@ class LoginPage extends Component {
     e.preventDefault();
     try {
       await userService.login(this.state);
-      // Successfully signed up - show GamePage
-      this.propshandleSignupOrLogin();
+      this.props.handleSignupOrLogin();
       this.props.history.push('/');
     } catch (err) {
       alert('Invalid Credentials!');
