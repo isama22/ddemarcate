@@ -1,6 +1,11 @@
 .nav-container {
     /* background-color: aquamarine; */
-    background-color: thistle;
-    color: red;
-    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    color: lightgray;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    padding: 5px;
+}
+
+.nav-links {
+    color: lightgray;
 }
