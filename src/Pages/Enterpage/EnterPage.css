@@ -30,6 +30,12 @@
 
 }
 
+.enter-link {
+    color: white;
+}
+.enter-link:hover {
+    color: red;
+}
 .follow-img {
     width: 30vw;
 }

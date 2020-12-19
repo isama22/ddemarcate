@@ -10,9 +10,9 @@ const EnterPage = () => {
 
         <img src="https://i.postimg.cc/wB9KwWDP/output-onlinepngtools-9.png" alt="" className="follow-img"/>
         <div className="follow-links">
-          <Link to="/dana1">line 1</Link>
-          <Link to="/carson1">line2</Link>
-          <Link to="/derksen1">line2</Link>
+          <Link className="enter-link" to="/dana1">The heat out there this evening</Link>
+          <Link className="enter-link" to="/carson1">I can hear little clicks inside my dream.</Link>
+          <Link className="enter-link" to="/derksen1">There goes the</Link>
         </div>
       </div>
     </div>

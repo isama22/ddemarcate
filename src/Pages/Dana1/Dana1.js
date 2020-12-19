@@ -8,7 +8,7 @@ const Dana1 = () => {
     <div id="dana1page">
       <div className="">
         <p>The heat out there this evening</p>
-        <Link className="" to="/dana2">is contained heat like things keep applicable boxes</Link>
+        <Link className="link" to="/dana2">is contained heat like things keep applicable boxes</Link>
       </div>
     </div>
   );
