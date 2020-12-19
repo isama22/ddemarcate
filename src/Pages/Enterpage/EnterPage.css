@@ -30,6 +30,16 @@
 
 }
 
+.follow-img {
+    width: 30vw;
+}
+
+@media screen and (max-width: 683px) {
+    .follow-img {
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .enterpage {
         height: 700px;
