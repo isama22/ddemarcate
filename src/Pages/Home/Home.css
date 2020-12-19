@@ -4,29 +4,39 @@
     background-repeat: none;
     width: 100%;
     height: 800px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
+    display: flex;
+    justify-content: flex-end;
 }
 
 .main-image {
     background-color: black;
-    background-image: url(https://i.postimg.cc/Nf1d546f/Screen-Shot-2020-03-17-at-9-18-42-PM.png);
-    background-size: 100%;
+    background-image: url(https://i.postimg.cc/FRBdGPK4/Screen-Shot-2020-12-18-at-5-45-45-PM.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 550px;
-    height: 600px;
-    margin-left: 600px;
+    width: 20vw;
+    height: 40vw;
+    margin: 3vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .enter-box {
-    background-color: rgba(170, 155, 125, 0.53);
-    width: 400px;
-    height: 500px;
+    /* background-color: rgba(170, 155, 125, 0.53); */
+    /* box-shadow: 0px 0px 50px 50px rgba(213,207,189,0.61); */
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .enter {
     color: white;
     text-decoration: none;
+}
+
+.enter:hover {
+    color: aqua;
 }
