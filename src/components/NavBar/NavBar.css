@@ -1,11 +1,16 @@
 .nav-container {
-    /* background-color: aquamarine; */
     background-color: black;
     color: lightgray;
-    /* font-family: 'Josefin Sans', sans-serif; */
     padding: 5px;
 }
 
 .nav-links {
     color: lightgray;
+}
+
+@media screen and (max-width: 375px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }

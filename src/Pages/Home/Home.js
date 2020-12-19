@@ -7,9 +7,9 @@ import NavBar from '../../components/NavBar/NavBar'
 const Home = (props) => {
     return (
         <div className="Home">
-            <div className="navbar-home">
-                {/* <NavBar/> */}
-            </div>
+            {/* <div className="navbar-home">
+                <NavBar/>
+            </div> */}
                 <div className="main-image">
                     <div className="enter-box">
                          <Link to="/enter" className="enter"><em>enter</em></Link>
