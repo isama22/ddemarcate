@@ -7,6 +7,8 @@ import NavBar from '../../components/NavBar/NavBar'
 import LoginPage from '../../Pages/LoginPage/LoginPage'
 import SignupPage from '../../Pages/SignupPage/SignupPage'
 import Dana1 from '../../Pages/Dana1/Dana1'
+import Carson1 from '../../Pages/Carson1/Carson1'
+import Derksen1 from '../../Pages/Derksen1/Derksen1'
 import userService from '../../utils/userService';
 
 class App extends Component {
@@ -52,6 +54,8 @@ class App extends Component {
             />
           } />
           <Route path="/dana1" component={Dana1}/>
+          <Route path="/carson1" component={Carson1}/>
+          <Route path="/derksen1" component={Derksen1}/>
         </Switch>
       </div>
     );

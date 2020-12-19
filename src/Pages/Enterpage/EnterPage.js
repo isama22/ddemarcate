@@ -11,8 +11,8 @@ const EnterPage = () => {
         <img src="https://i.postimg.cc/wB9KwWDP/output-onlinepngtools-9.png" alt="" className="follow-img"/>
         <div className="follow-links">
           <Link to="/dana1">line 1</Link>
-          <p>line 2</p>
-          <p>line 3</p>
+          <Link to="/carson1">line2</Link>
+          <Link to="/derksen1">line2</Link>
         </div>
       </div>
     </div>
