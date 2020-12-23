@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 const Dana3 = () => {
 
   return (
-    <div id="dana1page">
-      <div className="text">
+    <div className="dana1page">
+      <div className="dana-text">
       <p>The heat out there this evening</p>
       <p>is contained heat like things keep applicable boxes</p>
       <p>at the ready then subsume their diverging constituent parts</p>
