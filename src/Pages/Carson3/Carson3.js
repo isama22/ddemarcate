@@ -10,7 +10,7 @@ const Carson3 = () => {
           <p>I can hear little clicks inside my dream.</p>
           <p>Night drips its silver tap</p>
           <p>down the back.</p>
-          <Link id="link" to="/addcarsonpost">At 4 A.M. I wake. Thinking</Link>
+          <Link className="link" to="/addcarsonpost">At 4 A.M. I wake. Thinking</Link>
     </div>
     </div >
   );
