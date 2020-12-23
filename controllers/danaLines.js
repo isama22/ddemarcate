@@ -1,4 +1,4 @@
-const Post = require('../models/post')
+const DanaLine = require('../models/danaLine')
 
 module.exports = {
     index,
