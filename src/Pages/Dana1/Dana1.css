@@ -5,6 +5,7 @@
     height: 100%;
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(https://i.postimg.cc/6QnpcZ7H/Screen-Shot-2020-12-01-at-4-12-41-PM.png);
@@ -21,19 +22,16 @@
 
 @media screen and (max-width: 375px) {
     #dana1page {
-        /* padding: 3vw; */
-        width: 100%;
+        width: 375px;
         height: 100%;
-        word-wrap: break-word;
-        color: black;
-    }
-    .dana1-mobile {
-        background-color: blanchedalmond;
-        width: 340px;
+        background-image: url(https://i.postimg.cc/zfGcXjVx/Screen-Shot-2020-12-22-at-10-04-39-PM.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 40px;
     }
     .link {
         width: 340px;
-        word-wrap: break-word;
-        color: black;
     }
 }
