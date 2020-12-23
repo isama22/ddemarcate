@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const Derksen2 = () => {
   return (
-    <div id="derksen-2-main-div">
-      <div id="derksen-2-text-div">
+    <div className="derksen-pages">
+      <div className="derksen-text">
       <p>There goes the</p>
         <p>aluminum, the antimony, the arsenic</p>
-        <Link className="derksen-link" to="/derksen3">the barium, the cadmium,</Link>
+        <Link className="link" to="/derksen3">the barium, the cadmium,</Link>
       </div>
     </div>
   );
