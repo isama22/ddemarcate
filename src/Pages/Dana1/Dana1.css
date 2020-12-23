@@ -18,3 +18,9 @@
 .link:hover {
     color: red;
 }
+
+@media screen and (max-width: 375px) {
+    #dana1page {
+        padding: 3vw;
+    }
+}

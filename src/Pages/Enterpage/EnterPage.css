@@ -48,10 +48,35 @@
 
 @media screen and (max-width: 375px) {
     .enterpage {
-        height: 700px;
-        width: 700px;
+        background-image: none;
+        background-color: black;
+        height: 640px;
+        width: 375px;
     }
-    /* .enter-box {
-
-    } */
+    .enter-box {
+        width: 80%;
+        height: 90%;
+        background-image: url(https://i.postimg.cc/CLRdMPk9/IMG-3871.jpg);
+        background-size: cover;
+    }
+    .follow-img {
+        width: 280px;
+        border: solid 1px black;
+    }
+    .follow-links {
+        background-color: #fff4df;
+        width: 90%;
+        height: 20%;
+        color: black;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .enter-link {
+        color: black;
+        font-size: 10px;
+        margin: 10px;
+    }
 }
