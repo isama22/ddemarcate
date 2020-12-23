@@ -1,0 +1,38 @@
+.carson-pages {
+    color: white;
+    background-color: wheat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.postimg.cc/VNdHZnQq/Screen-Shot-2020-06-18-at-4-21-39-PM.png);
+    background-size: cover;
+}
+.link {
+    color: white;
+}
+
+.link:hover {
+    color: red;
+}
+
+@media screen and (max-width: 375px) {
+    .carson-pages {
+        width: 375px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 40px;
+    }
+    .carson-text {
+        width: 320px;
+    }
+    .link {
+        color: #fff3de;
+    }
+}

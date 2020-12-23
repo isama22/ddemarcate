@@ -5,15 +5,12 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 const Carson3 = () => {
 
   return (
-    <div className="bgcolor">
-      <br></br><br></br><br></br><br></br>
-      <div className="main3-c">
-        <div id="text3-c">
+    <div className="carson-pages">
+      <div className="carson-text">
           <p>I can hear little clicks inside my dream.</p>
           <p>Night drips its silver tap</p>
           <p>down the back.</p>
-          <Link id="line4-c" to="/addcarsonpost">At 4 A.M. I wake. Thinking</Link>
-      </div>
+          <Link id="link" to="/addcarsonpost">At 4 A.M. I wake. Thinking</Link>
     </div>
     </div >
   );

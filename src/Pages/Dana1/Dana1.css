@@ -1,4 +1,4 @@
-.dana1page {
+.dana-pages {
     color: white;
     background-color: wheat;
     width: 100%;
@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 375px) {
-    .dana1page {
+    .dana-pages {
         width: 375px;
         height: 100%;
         background-image: url(https://i.postimg.cc/zfGcXjVx/Screen-Shot-2020-12-22-at-10-04-39-PM.png);
