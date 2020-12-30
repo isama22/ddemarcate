@@ -7,7 +7,6 @@ class DanaLines extends Component{
     render() {
         return (
             <div>
-            <p style={{backgroundColor: "red"}}>dana lines go here</p>
     
             {this.props.danaLines.map(danaLine =>
                         <DanaLine

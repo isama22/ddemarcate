@@ -57,7 +57,7 @@ class AddDanaLine extends Component {
               />
             </div>
 
-            <div className='add-links'>
+            <div>
                 <Link className='cancel-button' to='/'>Cancel</Link>
                 <button
                     className="btn"
@@ -69,6 +69,7 @@ class AddDanaLine extends Component {
             </div>
           </form>
         </div>
+        <Link to="/danapage">skip</Link>
       </div>
     )
   }

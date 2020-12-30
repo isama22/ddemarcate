@@ -18,7 +18,9 @@ async componentDidMount() {
             <>
                 <div className="dana-page">
                     <p>dana page</p>
+
                 <DanaLines 
+                className="dana-lines"
                 danaLines={this.state.danaLines}
                 handleGetAllDanaLines={this.props.handleGetAllDanaLines}/>
                 </div>
