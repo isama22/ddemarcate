@@ -10,7 +10,8 @@ const Dana3 = () => {
       <p>The heat out there this evening</p>
       <p>is contained heat like things keep applicable boxes</p>
       <p>at the ready then subsume their diverging constituent parts</p>
-        <Link className="link" to="/adddanapost">long ambivalent talks into midnight, all those</Link>
+        <Link className="link" to="/adddanaline">long ambivalent talks into midnight, all those</Link>
+        
       </div>
     </div>
   );

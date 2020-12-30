@@ -12,7 +12,7 @@ export function create(danaLine) {
         method: 'POST',
         headers: {
             'Content-type': 'application/json',
-            'Authorization':  'Bearer ' + tokenService.getToken()
+            'Authorization': 'Bearer ' + tokenService.getToken()
         },
         body: JSON.stringify(danaLine)
     }
