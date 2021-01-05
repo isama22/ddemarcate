@@ -27,28 +27,15 @@ class AddDanaLine extends Component {
   render() {
     return (
       <div className="add-dana-page">
-        <div className="add-page-header">
-        </div>
-        <div className='add-service-form'>
+        <div className='add-dana-form'>
           <form
-            ref={this.formRef} 
-            autoComplete="off" 
+            ref={this.formRef}
+            autoComplete="off"
             onSubmit={this.handleSubmit}
           >
-            {/* <div className='form-item'>
-              <label className='form-label'>Title - </label>
-              <input
-                className="service-form"
-                name="title"
-                value={this.state.formData.title}
-                onChange={this.handleChange}
-                required
-                maxLength="20"
-              /> 
-            </div> */}
             <div className='form-item'>
-              <label className='form-label'>Text - </label>
-              <input 
+              {/* <label className='form-label'>Text: </label> */}
+              <input
                 className="dana-line-text"
                 name="text"
                 value={this.state.formData.text}
@@ -57,19 +44,19 @@ class AddDanaLine extends Component {
               />
             </div>
 
-            <div>
-                <Link className='cancel-button' to='/'>Cancel</Link>
-                <button
-                    className="btn"
-                    type="submit"
-                    disabled={this.state.invalidForm}
-                >
-                    Add
-                </button>
+            <div className="buttons">
+              <button
+                className="btn"
+                type="submit"
+                disabled={this.state.invalidForm}
+              >
+                Add
+              </button>
+              <Link className='cancel-button' to='/'>Cancel</Link>
             </div>
           </form>
         </div>
-        <Link to="/danapage">skip</Link>
+        <Link to="/danapage" className="skip">skip</Link>
       </div>
     )
   }
