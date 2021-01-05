@@ -1,10 +1,41 @@
 .dana-page {
-    background-color: blanchedalmond;
+    background-image: url("https://i.postimg.cc/3rF6hdJM/Screen-Shot-2020-05-25-at-10-30-56-PM.png");   
+    background-size: initial; 
     height: 100%;
     width: 100%;
     position: fixed;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+
+}
+.original-text {
+    background-color: aquamarine;   
+    border: solid 2px blue;
+    overflow: scroll;
+    height: 70%;
+}
+.original-text>pre {
+    font-family: arial;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.poem-header {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: black 2px solid;
+}
+.poem-link {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.dana-lines {
+    background-color: aliceblue;
+    white-space: pre-wrap;
 }
 
-.dana-lines {
-    background-color: blueviolet;
-}
