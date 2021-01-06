@@ -132,6 +132,7 @@ class App extends Component {
             danaLines={this.state.danaLines}
             handleGetAllDanaLines={this.props.handleGetAllDanaLines}
             history={history}
+            user={this.state.user}
             />
             :
             <Redirect to="/login" />

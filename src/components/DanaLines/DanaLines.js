@@ -13,6 +13,7 @@ class DanaLines extends Component{
                           danaLine={danaLine} 
                           key={danaLine._id}
                           handleGetAllDanaLines={this.props.handleGetAllDanaLines}
+                          user={this.props.user}
                         />
                       )}
             </div>

@@ -64,6 +64,7 @@ class DanaPage extends Component {
                                         <DanaLines
                                             danaLines={this.state.danaLines}
                                             handleGetAllDanaLines={this.props.handleGetAllDanaLines} 
+                                            user={this.props.user}
                                         />
                                     </div>
                             </div>
