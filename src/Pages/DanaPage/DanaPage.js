@@ -18,42 +18,41 @@ class DanaPage extends Component {
             <>
                 <div className="dana-page">
                     <div className="original-text">
-                        <p className="poem-header">
-                            <strong>Don't Let Me Be Wistful</strong><em>Dana Ward</em>
-                        </p>
-                            <pre>{`
+                            <div className="poem-div">
+                                <p className="poem-header">
+                                    <strong>Don't Let Me Be Wistful</strong><em>Dana Ward</em>
+                                </p>
                                 The heat out there this evening
-
+                                <br /><br />
                                 is contained heat like things keep applicable boxes
-
+                                <br /><br />
                                 at the ready then subsume their diverging constituent parts
-
+                                <br /><br />
                                 long ambivalent talks into midnight, all those
-
+                                <br /><br />
                                 glowy Sophia Coppola movies, Prosecco
-
+                                <br /><br />
                                 the sexiest records I know. I don’t feel
-
+                                <br /><br />
                                 how I know anymore to be more than something seeking
-
+                                <br /><br />
                                 my appalling lack of cinematic knowledge, fictive innocence
-
+                                <br /><br />
                                 & something like the break-down of those little boxes
-
+                                <br /><br />
                                 little tombs put their hands up in front of my mouth
-
+                                <br /><br />
                                 there’s a tacitly humiliating eulogy to drown out couldn’t feel
-
+                                <br /><br />
                                 much more stupid about feeling stupid over feeling
-
+                                <br /><br />
                                 stupid, living. Let me go & watch something
-
+                                <br /><br />
                                 moving several images some of them symbolize humility broken
-
+                                <br /><br />
                                 postures bloodshot eyes, intimately talking through this
-
+                                <br /><br />
                                 publicly I am not developing at all but just the same.
-                                 `}
                                 <a
                                     className="poem-link"
                                     href="https://www.poetryfoundation.org/poems/55982/dont-let-me-be-wistful"
@@ -61,12 +60,13 @@ class DanaPage extends Component {
                                     rel="noopener noreferrer"
                                 >...
                                 </a>
-                            </pre>
-                        <DanaLines
-                            className="dana-lines"
-                            danaLines={this.state.danaLines}
-                            handleGetAllDanaLines={this.props.handleGetAllDanaLines} 
-                        />
+                                    <div className="dana-page-lines-container">
+                                        <DanaLines
+                                            danaLines={this.state.danaLines}
+                                            handleGetAllDanaLines={this.props.handleGetAllDanaLines} 
+                                        />
+                                </div>
+                            </div>
                     </div>
 
                 </div>

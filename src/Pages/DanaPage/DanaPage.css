@@ -13,25 +13,32 @@
     background-color: #8fffda;
     border: solid 2px blue;
     overflow: scroll;
-    height: 70%;
+    height: 80%;
     width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .original-text::-webkit-scrollbar {
     display: none;
 }
 
-.original-text>pre {
-    font-family: arial;
-    font-size: 12px;
-    margin-bottom: 10px;
+.poem-div {
+    /* font-family: arial; */
+    font-size: 10px;
+    /* margin-bottom: 150px; */
+    /* margin-top: 30px; */
+    /* width: 70%;
+    height: 80%; */
 }
 
 .poem-header {
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
     justify-content: space-evenly;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     border-bottom: black 2px solid;
 }
@@ -42,6 +49,6 @@
     font-weight: bold;
 }
 
-.dana-lines {
-    white-space: pre-wrap;
+.dana-page-lines-container {
+    /* background-color: brown; */
 }

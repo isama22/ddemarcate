@@ -1,9 +1,11 @@
 .added-lines {
-    font-size: 12px;
-    margin-left: 107px;
+    font-size: 10px;
+    /* margin-left: 107px; */
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
 .username {
-    color: red;
+    color: #854442;
+    white-space: pre-wrap;
 }
