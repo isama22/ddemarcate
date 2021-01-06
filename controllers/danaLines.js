@@ -9,7 +9,7 @@ module.exports = {
 
 async function index(req, res) {
     const danaLines = await DanaLine.find({})
-    .sort({createdAt: -1})
+    .sort({createdAt: 1})
     res.status(200).json(danaLines)
 }
 
