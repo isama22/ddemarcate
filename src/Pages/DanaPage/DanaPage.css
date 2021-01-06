@@ -12,7 +12,7 @@
 .original-text {
     background-color: #8fffda;
     border: solid 2px blue;
-    overflow: scroll;
+    /* overflow: scroll; */
     height: 80%;
     width: 38%;
     display: flex;
@@ -21,12 +21,13 @@
     align-items: center;
 }
 
-.original-text::-webkit-scrollbar {
-    display: none;
-}
-
 .poem-div {
     font-size: 10px;
+    overflow: scroll;
+}
+
+.poem-div::-webkit-scrollbar {
+    display: none;
 }
 
 .poem-header {
@@ -43,7 +44,6 @@
     text-decoration: underline;
     font-weight: bold;
 }
-
 
 @media screen and (max-width: 375px) {
     .original-text {
