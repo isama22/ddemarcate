@@ -5,22 +5,24 @@
     width: 100%;
     position: fixed;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-
 }
+
 .original-text {
-    background-color: aquamarine;   
+    background-color: #8fffda;   
     border: solid 2px blue;
     overflow: scroll;
     height: 70%;
+    width: 38%;
 }
+
 .original-text>pre {
     font-family: arial;
     font-size: 12px;
     margin-bottom: 10px;
 }
+
 .poem-header {
     font-size: 12px;
     display: flex;
@@ -29,13 +31,14 @@
     padding: 10px;
     border-bottom: black 2px solid;
 }
+
 .poem-link {
     color: red;
     text-decoration: underline;
     font-weight: bold;
 }
+
 .dana-lines {
-    background-color: aliceblue;
     white-space: pre-wrap;
 }
 
