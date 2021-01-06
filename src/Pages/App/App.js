@@ -10,6 +10,7 @@ import Dana1 from '../../Pages/Dana1/Dana1'
 import Dana2 from '../../Pages/Dana2/Dana2'
 import Dana3 from '../../Pages/Dana3/Dana3'
 import AddDanaLine from '../../Pages/AddDanaLine/AddDanaLine'
+import DanaEdit from '../../Pages/DanaEdit/DanaEdit'
 import DanaPage from '../../Pages/DanaPage/DanaPage'
 import Carson1 from '../../Pages/Carson1/Carson1'
 import Carson2 from "../../Pages/Carson2/Carson2";
@@ -40,6 +41,17 @@ class App extends Component {
       danaLines: [...state.danaLines, newDana]
     }),
       () => this.props.history.push('/'))
+  }
+
+  handleUpdateDana = async updatedDanData => {
+    const updatedDana = await danaLinesAPI.update(updatedDanaData)
+    const newDanaLinesArray = this.state.danaLines.map(e =>
+      e._id === updatedDana._id ? updatedDana : e
+    )
+    this.setState(
+      { danaLines: newDanaLinesArray },
+      () => this.props.history.push('/')
+    )
   }
 
 
@@ -101,12 +113,25 @@ class App extends Component {
                 <Redirect to='/login' />}
           />
           <Route
+            exact path="/danaedit"
+            render={({ location }) =>
+              userService.getUser() ?
+                <DanaEdit
+                  handleUpdateDana={this.handleUpdateDana}
+                  location={location}
+                  user={this.state.user}
+                />
+                :
+                <Redirect to='/login' />
+            }
+          />
+          <Route
             exact path="/danapage"
             render={() =>
               userService.getUser() ?
                 <DanaPage
                   danaLines={this.state.danaLines}
-                  // handleGetAllDanaLines={this.props.handleGetAllDanaLines}
+                // handleGetAllDanaLines={this.props.handleGetAllDanaLines}
                 />
                 :
                 <Redirect to="/login" />
