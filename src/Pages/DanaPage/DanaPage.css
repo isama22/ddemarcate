@@ -1,6 +1,6 @@
 .dana-page {
-    background-image: url("https://i.postimg.cc/3rF6hdJM/Screen-Shot-2020-05-25-at-10-30-56-PM.png");   
-    background-size: initial; 
+    background-image: url("https://i.postimg.cc/3rF6hdJM/Screen-Shot-2020-05-25-at-10-30-56-PM.png");
+    background-size: initial;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -10,11 +10,15 @@
 }
 
 .original-text {
-    background-color: #8fffda;   
+    background-color: #8fffda;
     border: solid 2px blue;
     overflow: scroll;
     height: 70%;
     width: 38%;
+}
+
+.original-text::-webkit-scrollbar {
+    display: none;
 }
 
 .original-text>pre {
@@ -41,4 +45,3 @@
 .dana-lines {
     white-space: pre-wrap;
 }
-
