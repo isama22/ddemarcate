@@ -23,3 +23,14 @@ async function create(req, res) {
     const danaLine = await DanaLine.create(req.body)
     res.status(201).json(danaLine)
 }
+
+
+async function update(req, res) {
+    try {
+        const updatedDana = await DanaLine.findByIdAndUpdate(req.params.id, req.body, {new: true})
+        res.status(200).json(updatedDana)
+    }
+    catch(err){
+        res.status(500).json(err)
+    }
+}

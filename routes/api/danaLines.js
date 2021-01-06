@@ -6,8 +6,8 @@ router.get('/', danaLinesCtrl.index)
 router.get('/:id', danaLinesCtrl.show)
 
 router.use(require('../../config/auth'))
-
 router.post('/', checkAuth, danaLinesCtrl.create)
+router.put('/:id', checkAuth, danaLinesCtrl.update)
 
 function checkAuth(req, res, next){
     if (req.user) return next()
