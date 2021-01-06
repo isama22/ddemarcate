@@ -11,7 +11,7 @@ function DanaLine({ danaLine, user }) {
                         <Link
                             className='action-link'
                             to={{
-                                pathname: '/edit',
+                                pathname: '/editdana',
                                 state: { danaLine },
                             }}>edit
                             </Link>

@@ -127,22 +127,22 @@ class App extends Component {
           <Route
             exact path="/danapage"
             render={({ history }) =>
-            userService.getUser() ?
-            <DanaPage
-            danaLines={this.state.danaLines}
-            handleGetAllDanaLines={this.props.handleGetAllDanaLines}
-            history={history}
-            user={this.state.user}
-            />
-            :
-            <Redirect to="/login" />
-          } />
+              userService.getUser() ?
+                <DanaPage
+                  danaLines={this.state.danaLines}
+                  handleGetAllDanaLines={this.props.handleGetAllDanaLines}
+                  history={history}
+                  user={this.state.user}
+                />
+                :
+                <Redirect to="/login" />
+            } />
           <Route
-            exact path="/danaedit"
+            exact path="/editdana"
             render={({ location }) =>
               userService.getUser() ?
                 <DanaEdit
-                  handleUpdateDana={this.handleUpdateDana}
+                  handleUpdateDanaLine={this.handleUpdateDanaLine}
                   location={location}
                   user={this.state.user}
                 />
