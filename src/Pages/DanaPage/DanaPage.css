@@ -26,12 +26,7 @@
 }
 
 .poem-div {
-    /* font-family: arial; */
     font-size: 10px;
-    /* margin-bottom: 150px; */
-    /* margin-top: 30px; */
-    /* width: 70%;
-    height: 80%; */
 }
 
 .poem-header {
@@ -51,4 +46,13 @@
 
 .dana-page-lines-container {
     /* background-color: brown; */
+}
+
+@media screen and (max-width: 375px) {
+    .original-text {
+        width: 80%;
+    }
+    .poem-div {
+        font-size: 9px;
+    }
 }
