@@ -43,10 +43,10 @@ class App extends Component {
       () => this.props.history.push('/'))
   }
 
-  handleUpdateDana = async updatedDanData => {
-    const updatedDana = await danaLinesAPI.update(updatedDanaData)
+  handleUpdateDanaLine = async updatedDanaLineData => {
+    const updatedDanaLine = await danaLinesAPI.update(updatedDanaLineData)
     const newDanaLinesArray = this.state.danaLines.map(e =>
-      e._id === updatedDana._id ? updatedDana : e
+      e._id === updatedDanaLine._id ? updatedDanaLine : e
     )
     this.setState(
       { danaLines: newDanaLinesArray },
@@ -55,7 +55,19 @@ class App extends Component {
   }
 
 
-
+  handleGetAllDanaLines = async () => {
+    const danaLines = await danaLinesAPI.getAll()
+    this.setState({ danaLines: danaLines })
+  }
+  //helper function//
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+  //lifecycle functions//
+  async componentDidMount() {
+    const danaLines = await danaLinesAPI.getAll()
+    this.setState({ danaLines })
+  }
 
 
   render() {
@@ -113,6 +125,18 @@ class App extends Component {
                 <Redirect to='/login' />}
           />
           <Route
+            exact path="/danapage"
+            render={({ history }) =>
+            userService.getUser() ?
+            <DanaPage
+            danaLines={this.state.danaLines}
+            handleGetAllDanaLines={this.props.handleGetAllDanaLines}
+            history={history}
+            />
+            :
+            <Redirect to="/login" />
+          } />
+          <Route
             exact path="/danaedit"
             render={({ location }) =>
               userService.getUser() ?
@@ -125,17 +149,6 @@ class App extends Component {
                 <Redirect to='/login' />
             }
           />
-          <Route
-            exact path="/danapage"
-            render={() =>
-              userService.getUser() ?
-                <DanaPage
-                  danaLines={this.state.danaLines}
-                // handleGetAllDanaLines={this.props.handleGetAllDanaLines}
-                />
-                :
-                <Redirect to="/login" />
-            } />
         </Switch>
       </div>
     );

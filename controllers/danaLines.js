@@ -3,7 +3,8 @@ const DanaLine = require('../models/danaLine')
 module.exports = {
     index,
     show, 
-    create
+    create,
+    update
 }
 
 async function index(req, res) {
@@ -27,8 +28,8 @@ async function create(req, res) {
 
 async function update(req, res) {
     try {
-        const updatedDana = await DanaLine.findByIdAndUpdate(req.params.id, req.body, {new: true})
-        res.status(200).json(updatedDana)
+        const updatedDanaLine = await DanaLine.findByIdAndUpdate(req.params.id, req.body, {new: true})
+        res.status(200).json(updatedDanaLine)
     }
     catch(err){
         res.status(500).json(err)

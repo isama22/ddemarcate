@@ -5,14 +5,14 @@ import { Link, Redirect } from 'react-router-dom'
 class DanaEdit extends Component {
     state = {
         invalidForm: true,
-        formData: this.props.location.state ? this.props.location.state.post : null
+        formData: this.props.location.state ? this.props.location.state.danaLine : null
     }
 
     formRef = React.createRef()
 
     handleSubmit = e => {
         e.preventDefault()
-        this.props.handleUpdateDana(this.state.formData)
+        this.props.handleUpdateDanaLine(this.state.formData)
     }
 
     handleChange = e => {
