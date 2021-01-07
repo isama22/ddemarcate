@@ -12,10 +12,11 @@ import Dana3 from '../../Pages/Dana/Dana3/Dana3'
 import AddDanaLine from '../../Pages/Dana/AddDanaLine/AddDanaLine'
 import DanaEdit from '../../Pages/Dana/DanaEdit/DanaEdit'
 import DanaPage from '../../Pages/Dana/DanaPage/DanaPage'
-import Carson1 from '../../Pages/Carson1/Carson1'
-import Carson2 from "../../Pages/Carson2/Carson2";
-import Carson3 from "../../Pages/Carson3/Carson3";
-import CarsonPage from '../../Pages/Carsonpage/CarsonPage'
+import Carson1 from '../../Pages/Carson/Carson1/Carson1'
+import Carson2 from "../../Pages/Carson/Carson2/Carson2";
+import Carson3 from "../../Pages/Carson/Carson3/Carson3";
+import AddCarsonLine from '../../Pages/Carson/AddCarsonLine/AddCarsonLine'
+import CarsonPage from '../../Pages/Carson/Carsonpage/CarsonPage'
 import Derksen1 from '../../Pages/Derksen1/Derksen1'
 import Derksen2 from "../../Pages/Derksen2/Derksen2";
 import Derksen3 from "../../Pages/Derksen3/Derksen3";
@@ -173,7 +174,17 @@ class App extends Component {
                 <Redirect to='/login' />
             }
           />
-          
+          <Route
+            exact path="/addcarsonline"
+            render={() =>
+              userService.getUser() ?
+                <AddCarsonLine
+                  handleAddCarsonLine={this.handleAddCarsonLine}
+
+                />
+                :
+                <Redirect to='/login' />}
+          />
           <Route
             exact path="/carsonpage"
             render={({ history }) =>
@@ -183,7 +194,7 @@ class App extends Component {
                   handleGetAllCarsonLines={this.props.handleGetAllCarsonLines}
                   history={history}
                   user={this.state.user}
-                  // handleDeleteDanaLine={this.handleDeleteDanaLine}
+                // handleDeleteDanaLine={this.handleDeleteDanaLine}
                 />
                 :
                 <Redirect to="/login" />
