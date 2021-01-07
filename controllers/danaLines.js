@@ -4,7 +4,8 @@ module.exports = {
     index,
     show, 
     create,
-    update
+    update,
+    deleteOne
 }
 
 async function index(req, res) {
@@ -34,4 +35,9 @@ async function update(req, res) {
     catch(err){
         res.status(500).json(err)
     }
+}
+
+async function deleteOne(req, res) {
+    const deletedDanaLine = await DanaLine.findByIdAndRemove(req.params.id)
+    res.status(200).json(deletedDanaLine)
 }
