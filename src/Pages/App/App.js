@@ -54,6 +54,12 @@ class App extends Component {
     )
   }
 
+  handleDeleteDanaLine = async id => {
+    await danaLinesAPI.deleteOne(id)
+    this.setState(state => ({
+      danaLines: state.danaLines.filter(danaLine => danaLine._id !== id)
+    }), () => this.props.history.push('/'))
+  }
 
   handleGetAllDanaLines = async () => {
     const danaLines = await danaLinesAPI.getAll()
@@ -133,6 +139,7 @@ class App extends Component {
                   handleGetAllDanaLines={this.props.handleGetAllDanaLines}
                   history={history}
                   user={this.state.user}
+                  handleDeleteDanaLine={this.handleDeleteDanaLine}
                 />
                 :
                 <Redirect to="/login" />

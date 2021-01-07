@@ -13,6 +13,7 @@ class DanaLines extends Component{
                           danaLine={danaLine} 
                           key={danaLine._id}
                           handleGetAllDanaLines={this.props.handleGetAllDanaLines}
+                          handleDeleteDanaLine={this.props.handleDeleteDanaLine}
                           user={this.props.user}
                         />
                       )}
