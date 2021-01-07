@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './DanaPage.css';
 import DanaLines from '../../components/DanaLines/DanaLines'
 import * as danaLinesAPI from '../../services/danaLines-api'
+import { Link } from 'react-router-dom'
 
 class DanaPage extends Component {
     state = {
@@ -68,6 +69,7 @@ class DanaPage extends Component {
                                             user={this.props.user}
                                         />
                                     </div>
+                                    <Link to="/enter" className="start-over-link">try another poem</Link>
                             </div>
                     </div>
 

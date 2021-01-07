@@ -17,12 +17,12 @@ function DanaLine({ danaLine, handleDeleteDanaLine, user }) {
                             </Link>
             }
             {user._id === danaLine.user &&
-                <button
+                <p
                     className='delete'
                     onClick={() => handleDeleteDanaLine(danaLine._id)}
                 >
                     remove
-                            </button>
+                </p>
             }
         </div>
 

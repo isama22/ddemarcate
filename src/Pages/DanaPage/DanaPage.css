@@ -45,6 +45,10 @@
     font-weight: bold;
 }
 
+.start-over-link {
+    color: red;
+}
+
 @media screen and (max-width: 375px) {
     .original-text {
         width: 80%;

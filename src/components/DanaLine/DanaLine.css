@@ -9,3 +9,7 @@
     color: #854442;
     white-space: pre-wrap;
 }
+
+.delete {
+    height: 15px;
+}
