@@ -25,11 +25,8 @@ class DanaEdit extends Component {
 
     renderEditForm() {
         return (
-            <div className="add-post-page">
-                <div className="add-page-header">
-                    <p className='page-title'>Edit <span className='mobile-erase'>::</span></p>
-                </div>
-                <div className='add-service-form'>
+            <div className="add-dana-page">
+                <div className='add-dana-form'>
                     <form 
                         ref={this.formRef} 
                         autoComplete="off" 
