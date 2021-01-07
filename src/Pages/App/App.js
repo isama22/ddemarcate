@@ -6,7 +6,7 @@ import EnterPage from '../../Pages/Enterpage/EnterPage';
 import NavBar from '../../components/NavBar/NavBar'
 import LoginPage from '../../Pages/LoginPage/LoginPage'
 import SignupPage from '../../Pages/SignupPage/SignupPage'
-import Dana1 from '../../Pages/Dana1/Dana1'
+import Dana1 from '../../Pages/Dana/Dana1/Dana1'
 import Dana2 from '../../Pages/Dana2/Dana2'
 import Dana3 from '../../Pages/Dana3/Dana3'
 import AddDanaLine from '../../Pages/AddDanaLine/AddDanaLine'
@@ -15,16 +15,19 @@ import DanaPage from '../../Pages/DanaPage/DanaPage'
 import Carson1 from '../../Pages/Carson1/Carson1'
 import Carson2 from "../../Pages/Carson2/Carson2";
 import Carson3 from "../../Pages/Carson3/Carson3";
+import CarsonPage from '../../Pages/Carsonpage/CarsonPage'
 import Derksen1 from '../../Pages/Derksen1/Derksen1'
 import Derksen2 from "../../Pages/Derksen2/Derksen2";
 import Derksen3 from "../../Pages/Derksen3/Derksen3";
 import userService from '../../utils/userService';
 import * as danaLinesAPI from '../../services/danaLines-api'
+import * as carsonLinesAPI from '../../services/carsonLines-api'
 
 class App extends Component {
   state = {
     user: userService.getUser(),
-    danaLines: []
+    danaLines: [],
+    carsonLines: []
   }
 
   handleLogout = () => {
@@ -65,10 +68,23 @@ class App extends Component {
     const danaLines = await danaLinesAPI.getAll()
     this.setState({ danaLines: danaLines })
   }
+  //carson functions 
+  handleAddCarsonLine = async newCarsonData => {
+    const newCarson = await carsonLinesAPI.create(newCarsonData)
+    this.setState(state => ({
+      carsonLines: [...state.carsonLines, newCarson]
+    }),
+      () => this.props.history.push('/carsonpage'))
+  }
+  handleGetAllCarsonLines = async () => {
+    const carsonLines = await carsonLinesAPI.getAll()
+    this.setState({ carsonLines: carsonLines })
+  }
   //helper function//
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
   }
+
   //lifecycle functions//
   async componentDidMount() {
     const danaLines = await danaLinesAPI.getAll()
@@ -157,6 +173,21 @@ class App extends Component {
                 <Redirect to='/login' />
             }
           />
+          
+          <Route
+            exact path="/carsonpage"
+            render={({ history }) =>
+              userService.getUser() ?
+                <CarsonPage
+                  carsonLines={this.state.carsonLines}
+                  handleGetAllCarsonLines={this.props.handleGetAllCarsonLines}
+                  history={history}
+                  user={this.state.user}
+                  // handleDeleteDanaLine={this.handleDeleteDanaLine}
+                />
+                :
+                <Redirect to="/login" />
+            } />
         </Switch>
       </div>
     );
