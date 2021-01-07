@@ -9,4 +9,4 @@ const carsonLineSchema = new Schema({
     timestamps: true 
 })
 
-module.exports = mongoose.model('CarsonLine', CarsonLineSchema)
+module.exports = mongoose.model('CarsonLine', carsonLineSchema)
