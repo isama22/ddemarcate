@@ -7,6 +7,8 @@ function DanaLine({ danaLine, handleDeleteDanaLine, user }) {
 
         <div className="added-lines">
             <p>{danaLine.text} <em className="username">{danaLine.creator}</em></p>
+            <div className="line-options">
+
             {user._id === danaLine.user &&
                 <Link
                     className='action-link'
@@ -16,6 +18,7 @@ function DanaLine({ danaLine, handleDeleteDanaLine, user }) {
                     }}>edit
                             </Link>
             }
+            &nbsp;&nbsp;&nbsp;
             {user._id === danaLine.user &&
                 <p
                     className='delete'
@@ -24,6 +27,7 @@ function DanaLine({ danaLine, handleDeleteDanaLine, user }) {
                     remove
                 </p>
             }
+            </div>
         </div>
 
     )

@@ -24,6 +24,8 @@
 .poem-div {
     font-size: 10px;
     overflow: scroll;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .poem-div::-webkit-scrollbar {
@@ -46,9 +48,17 @@
 }
 
 .start-over-link {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 99%;
+    margin: 10px;
+    
+}
+.start-over-link>a {
     color: red;
 }
-
 @media screen and (max-width: 375px) {
     .original-text {
         width: 80%;

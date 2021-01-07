@@ -1,8 +1,15 @@
 .added-lines {
     font-size: 10px;
-    /* margin-left: 107px; */
     margin-top: 15px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.line-options {
+    display: flex;
+    justify-content: space-between;
 }
 
 .username {
@@ -11,5 +18,6 @@
 }
 
 .delete {
-    height: 15px;
+    cursor: pointer;
+    color: purple;
 }
