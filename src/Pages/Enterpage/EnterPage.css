@@ -22,7 +22,7 @@
 
 .follow-links {
     width: 80%;
-    border: solid 1px white;
+    border-bottom: solid 1px white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
