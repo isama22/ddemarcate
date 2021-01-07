@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './DanaPage.css';
-import DanaLines from '../../components/DanaLines/DanaLines'
-import * as danaLinesAPI from '../../services/danaLines-api'
+import DanaLines from '../../../components/DanaLines/DanaLines'
+import * as danaLinesAPI from '../../../services/danaLines-api'
 import { Link } from 'react-router-dom'
 
 class DanaPage extends Component {
