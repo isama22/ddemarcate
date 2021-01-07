@@ -45,7 +45,7 @@ class DanaEdit extends Component {
                         </div>
                     
                         <div className='add-links'>
-                            <Link className='cancel-button' to='/'>Cancel</Link>
+                            <Link className='cancel-button' to='/danapage'>Cancel</Link>
                             <button
                                 className="btn"
                                 type="submit"

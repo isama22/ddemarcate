@@ -40,7 +40,7 @@ class App extends Component {
     this.setState(state => ({
       danaLines: [...state.danaLines, newDana]
     }),
-      () => this.props.history.push('/'))
+      () => this.props.history.push('/danapage'))
   }
 
   handleUpdateDanaLine = async updatedDanaLineData => {
@@ -50,7 +50,7 @@ class App extends Component {
     )
     this.setState(
       { danaLines: newDanaLinesArray },
-      () => this.props.history.push('/')
+      () => this.props.history.push('/danapage')
     )
   }
 
@@ -58,7 +58,7 @@ class App extends Component {
     await danaLinesAPI.deleteOne(id)
     this.setState(state => ({
       danaLines: state.danaLines.filter(danaLine => danaLine._id !== id)
-    }), () => this.props.history.push('/'))
+    }), () => this.props.history.push('/danapage'))
   }
 
   handleGetAllDanaLines = async () => {
