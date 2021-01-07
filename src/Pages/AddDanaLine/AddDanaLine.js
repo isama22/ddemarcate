@@ -34,7 +34,6 @@ class AddDanaLine extends Component {
             onSubmit={this.handleSubmit}
           >
             <div className='form-item'>
-              {/* <label className='form-label'>Text: </label> */}
               <input
                 className="dana-line-text"
                 name="text"
@@ -52,7 +51,7 @@ class AddDanaLine extends Component {
               >
                 Add
               </button>
-              <Link className='cancel-button' to='/'>Cancel</Link>
+              <Link className='cancel-button' to='/dana3'>Cancel</Link>
             </div>
           </form>
         </div>
