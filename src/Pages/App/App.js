@@ -89,7 +89,8 @@ class App extends Component {
   //lifecycle functions//
   async componentDidMount() {
     const danaLines = await danaLinesAPI.getAll()
-    this.setState({ danaLines })
+    const carsonLines = await carsonLinesAPI.getAll()
+    this.setState({ danaLines, carsonLines })
   }
 
 
