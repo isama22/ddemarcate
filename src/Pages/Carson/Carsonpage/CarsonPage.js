@@ -18,37 +18,34 @@ class CarsonPage extends Component {
         return (
             <>
                 <div className="carson-page">
-                    <div className="original-text">
-                        <div className="poem-div">
+                    <div className="carson-poem-div">
+                        <div className="carson-original-text">
                             <p className="poem-header">
                                 <strong>The Glass Essay</strong><em>Anne Carson</em>
                             </p>
-                            <pre>{`
-            I
-            
-            I can hear little clicks inside my dream.
-            Night drips its silver tap
-            down the back.
-            At 4 A.M. I wake. Thinking
-
-            of the man who
-            left in September.
-            His name was Law.
-
-            My face in the bathroom mirror
-            has white streaks down it.
-            I rinse the face and return to bed.
-            Tomorrow I am going to visit my mother.
-
-
-            SHE
-
-            She lives on a moor in the north.
-            She lives alone.
-            Spring opens like a blade there.`}
-                                <a href="https://www.poetryfoundation.org/poems/48636/the-glass-essay" target="_blank" rel="noopener noreferrer" id="link">...</a>
-                            </pre>
-
+                                I
+                                <br /><br />
+                                I can hear little clicks inside my dream.
+                                Night drips its silver tap
+                                down the back.
+                                At 4 A.M. I wake. Thinking
+                                <br /><br />
+                                of the man who
+                                left in September.
+                                His name was Law.
+                                <br /><br />
+                                My face in the bathroom mirror
+                                has white streaks down it.
+                                I rinse the face and return to bed.
+                                Tomorrow I am going to visit my mother.
+                                <br /><br />
+                                <br /><br />
+                                SHE
+                                <br /><br />
+                                She lives on a moor in the north.
+                                She lives alone.
+                                Spring opens like a blade there.
+                                <a href="https://www.poetryfoundation.org/poems/48636/the-glass-essay" target="_blank" rel="noopener noreferrer" className="poem-link">...</a>
                             <div>
                                 <CarsonLines
                                     carsonLines={this.state.carsonLines}
