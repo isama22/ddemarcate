@@ -7,8 +7,8 @@ router.get('/:id', carsonLinesCtrl.show)
 
 router.use(require('../../config/auth'))
 router.post('/', checkAuth, carsonLinesCtrl.create)
-// router.put('/:id', checkAuth, carsonLinesCtrl.update)
-// router.delete('/:id', checkAuth, carsonLinesCtrl.delete)
+router.put('/:id', checkAuth, carsonLinesCtrl.update)
+router.delete('/:id', checkAuth, carsonLinesCtrl.delete)
 
 function checkAuth(req, res, next){
     if (req.user) return next()

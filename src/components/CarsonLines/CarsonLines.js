@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import CarsonLine from '../../components/CarsonLine/Carsonline';
+import CarsonLine from '../../components/CarsonLine/CarsonLine';
 
 
 class CarsonLines extends Component{

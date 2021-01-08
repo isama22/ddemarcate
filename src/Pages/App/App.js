@@ -77,6 +77,23 @@ class App extends Component {
     }),
       () => this.props.history.push('/carsonpage'))
   }
+  handleUpdateCarsonLine = async updatedCarsonLineData => {
+    const updatedCarsonLine = await carsonLinesAPI.update(updatedCarsonLineData)
+    const newCarsonLinesArray = this.state.carsonLines.map(e =>
+      e._id === updatedCarsonLine._id ? updatedCarsonLine : e
+    )
+    this.setState(
+      { danaLines: newCarsonLinesArray },
+      () => this.props.history.push('/carsonpage')
+    )
+  }
+
+  handleDeleteCarsonLine = async id => {
+    await carsonLinesAPI.deleteOne(id)
+    this.setState(state => ({
+      carsonLines: state.carsonLines.filter(carsonLine => carsonLine._id !== id)
+    }), () => this.props.history.push('/carsonpage'))
+  }
   handleGetAllCarsonLines = async () => {
     const carsonLines = await carsonLinesAPI.getAll()
     this.setState({ carsonLines: carsonLines })
@@ -195,7 +212,7 @@ class App extends Component {
                   handleGetAllCarsonLines={this.props.handleGetAllCarsonLines}
                   history={history}
                   user={this.state.user}
-                // handleDeleteDanaLine={this.handleDeleteDanaLine}
+                handleDeleteCarsonLine={this.handleDeleteCarsonLine}
                 />
                 :
                 <Redirect to="/login" />
