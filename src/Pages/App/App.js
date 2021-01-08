@@ -17,6 +17,7 @@ import Carson2 from "../../Pages/Carson/Carson2/Carson2";
 import Carson3 from "../../Pages/Carson/Carson3/Carson3";
 import AddCarsonLine from '../../Pages/Carson/AddCarsonLine/AddCarsonLine'
 import CarsonPage from '../../Pages/Carson/Carsonpage/CarsonPage'
+import CarsonEdit from '../../Pages/Carson/CarsonEdit/CarsonEdit'
 import Derksen1 from '../../Pages/Derksen1/Derksen1'
 import Derksen2 from "../../Pages/Derksen2/Derksen2";
 import Derksen3 from "../../Pages/Derksen3/Derksen3";
@@ -77,6 +78,7 @@ class App extends Component {
     }),
       () => this.props.history.push('/carsonpage'))
   }
+
   handleUpdateCarsonLine = async updatedCarsonLineData => {
     const updatedCarsonLine = await carsonLinesAPI.update(updatedCarsonLineData)
     const newCarsonLinesArray = this.state.carsonLines.map(e =>
@@ -198,7 +200,6 @@ class App extends Component {
               userService.getUser() ?
                 <AddCarsonLine
                   handleAddCarsonLine={this.handleAddCarsonLine}
-
                 />
                 :
                 <Redirect to='/login' />}
@@ -212,11 +213,24 @@ class App extends Component {
                   handleGetAllCarsonLines={this.props.handleGetAllCarsonLines}
                   history={history}
                   user={this.state.user}
-                handleDeleteCarsonLine={this.handleDeleteCarsonLine}
+                  handleDeleteCarsonLine={this.handleDeleteCarsonLine}
                 />
                 :
                 <Redirect to="/login" />
             } />
+          <Route
+            exact path="/editcarson"
+            render={({ location }) =>
+              userService.getUser() ?
+                <CarsonEdit
+                  handleUpdateCarsonLine={this.handleUpdateCarsonLine}
+                  location={location}
+                  user={this.state.user}
+                />
+                :
+                <Redirect to='/login' />
+            }
+          />
         </Switch>
       </div>
     );
