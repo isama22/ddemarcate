@@ -17,7 +17,7 @@ class CarsonPage extends Component {
     render() {
         return (
             <>
-                <div className="dana-page">
+                <div className="carson-page">
                     <div className="original-text">
                         <div className="poem-div">
                             <p className="poem-header">

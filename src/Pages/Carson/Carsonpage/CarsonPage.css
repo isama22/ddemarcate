@@ -1,0 +1,10 @@
+.carson-page {
+    background-image: url(https://i.postimg.cc/bJzhBxpr/IMG-6442.jpg);
+    background-size: initial;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
