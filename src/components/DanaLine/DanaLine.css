@@ -11,13 +11,15 @@
     display: flex;
     justify-content: space-between;
 }
-
+.line-options>a {
+    color: red;
+}
 .username {
     color: #854442;
     white-space: pre-wrap;
 }
 
-.delete {
+/* .delete {
     cursor: pointer;
     color: purple;
-}
+} */

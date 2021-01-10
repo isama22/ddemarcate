@@ -8,25 +8,24 @@ function DanaLine({ danaLine, handleDeleteDanaLine, user }) {
         <div className="added-lines">
             <p>{danaLine.text} <em className="username">{danaLine.creator}</em></p>
             <div className="line-options">
-
+                {user._id === danaLine.user &&
+                    <Link
+                        to={{
+                            pathname: '/editdana',
+                            state: { danaLine },
+                        }}
+                    >edit
+                    </Link>
+                }
+                &nbsp;&nbsp;&nbsp;
             {user._id === danaLine.user &&
-                <Link
-                    className='action-link'
-                    to={{
-                        pathname: '/editdana',
-                        state: { danaLine },
-                    }}>edit
-                            </Link>
-            }
-            &nbsp;&nbsp;&nbsp;
-            {user._id === danaLine.user &&
-                <p
-                    className='delete'
-                    onClick={() => handleDeleteDanaLine(danaLine._id)}
-                >
-                    remove
-                </p>
-            }
+                    <a
+                        className='delete'
+                        onClick={() => handleDeleteDanaLine(danaLine._id)}
+                    >
+                        remove
+                </a>
+                }
             </div>
         </div>
 
