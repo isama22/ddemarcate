@@ -9,9 +9,9 @@
     align-items: center;
 }
 
-.carson-poem-div {
-    background-color:	#dcc6c3;
-    border: solid 2px #8fe6db;
+.carson-original-text {
+    background-color: #8fffda;
+    border: solid 2px blue;
     height: 70%;
     width: 28%;
     display: flex;
@@ -20,11 +20,13 @@
     align-items: center;
 }
 
-.carson-original-text {
+.carson-poem-div {
     font-size: 10px;
     overflow: scroll;
     margin-bottom: 20px;
     padding: 10px;
+    height: 100%;
+    width: 88%;
 }
 
 .carson-original-text::-webkit-scrollbar {

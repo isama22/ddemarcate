@@ -75,7 +75,6 @@ class DanaPage extends Component {
                             <Link to="/enter" >try another poem</Link>
                         </div>
                     </div>
-
                 </div>
             </>
         );

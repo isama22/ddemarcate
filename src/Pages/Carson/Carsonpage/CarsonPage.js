@@ -18,8 +18,8 @@ class CarsonPage extends Component {
         return (
             <>
                 <div className="carson-page">
-                    <div className="carson-poem-div">
-                        <div className="carson-original-text">
+                    <div className="carson-original-text">
+                        <div className="carson-poem-div">
                             <p className="poem-header">
                                 <strong>The Glass Essay</strong><em>Anne Carson</em>
                             </p>
@@ -60,7 +60,6 @@ class CarsonPage extends Component {
                             <Link to="/enter" >try another poem</Link>
                         </div>
                     </div>
-
                 </div>
             </>
         );
