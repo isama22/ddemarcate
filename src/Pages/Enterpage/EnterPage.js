@@ -7,8 +7,6 @@ const EnterPage = () => {
   return (
     <div className="enterpage">
       <div className="enter-box">
-
-        {/* <img src="https://i.postimg.cc/wB9KwWDP/output-onlinepngtools-9.png" alt="" className="follow-img"/> */}
         <img src="https://i.postimg.cc/VsW-Sfq2b/Screen-Shot-2020-12-18-at-7-47-18-PM.png" alt="" className="follow-img"/>
         <div className="follow-links">
           <Link className="enter-link" to="/dana1">The heat out there this evening</Link>

@@ -10,6 +10,8 @@
 .line-options {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* background-color: beige; */
 }
 .line-options>a {
     color: red;
