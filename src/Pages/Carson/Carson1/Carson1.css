@@ -31,8 +31,10 @@
     }
     .carson-text {
         width: 320px;
+        color: grey;
     }
     .link {
-        color: #fff3de;
+        /* color: #fff3de; */
+        color: grey;
     }
 }

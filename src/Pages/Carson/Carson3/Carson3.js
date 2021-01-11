@@ -1,5 +1,4 @@
 import React from 'react';
-import './Carson3.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Carson3 = () => {
