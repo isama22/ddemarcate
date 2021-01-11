@@ -49,8 +49,8 @@
 .start-over-link {
     font-size: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
     width: 99%;
     margin: 10px;
     
@@ -69,7 +69,7 @@
     .start-over-link {
         flex-direction: row;
         justify-content: space-evenly;
-        border-top: solid 1px black;
+        border-top: solid .5px blue;
         padding: 5px;
     }
 }
