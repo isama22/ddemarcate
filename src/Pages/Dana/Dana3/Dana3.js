@@ -1,6 +1,5 @@
 import React from 'react';
-import './Dana3.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Dana3 = () => {
 

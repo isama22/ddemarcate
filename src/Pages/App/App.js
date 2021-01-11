@@ -18,9 +18,9 @@ import Carson3 from "../../Pages/Carson/Carson3/Carson3";
 import AddCarsonLine from '../../Pages/Carson/AddCarsonLine/AddCarsonLine'
 import CarsonPage from '../../Pages/Carson/Carsonpage/CarsonPage'
 import CarsonEdit from '../../Pages/Carson/CarsonEdit/CarsonEdit'
-import Derksen1 from '../../Pages/Derksen1/Derksen1'
-import Derksen2 from "../../Pages/Derksen2/Derksen2";
-import Derksen3 from "../../Pages/Derksen3/Derksen3";
+import Derksen1 from '../../Pages/Derksen/Derksen1/Derksen1'
+import Derksen2 from "../../Pages/Derksen/Derksen2/Derksen2";
+import Derksen3 from "../../Pages/Derksen/Derksen3/Derksen3";
 import userService from '../../utils/userService';
 import * as danaLinesAPI from '../../services/danaLines-api'
 import * as carsonLinesAPI from '../../services/carsonLines-api'

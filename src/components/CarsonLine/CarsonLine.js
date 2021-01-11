@@ -8,24 +8,25 @@ function CarsonLine({ carsonLine, handleDeleteCarsonLine, user }) {
             <p>{carsonLine.text} <em className="username">{carsonLine.creator}</em></p>
             <div className="line-options">
 
-            {user._id === carsonLine.user &&
-                <Link
-                    className='action-link'
-                    to={{
-                        pathname: '/editcarson',
-                        state: { carsonLine },
-                    }}>edit
+                {user._id === carsonLine.user &&
+                    <Link
+                        className='action-link'
+                        to={{
+                            pathname: '/editcarson',
+                            state: { carsonLine },
+                        }}>edit
                             </Link>
-            }
-            &nbsp;&nbsp;&nbsp;
+                }
+                &nbsp;&nbsp;&nbsp;
             {user._id === carsonLine.user &&
-                <a
-                    className='delete'
-                    onClick={() => handleDeleteCarsonLine(carsonLine._id)}
-                >
-                    remove
-                </a>
-            }
+                    <Link
+                        to=""
+                        className='delete'
+                        onClick={() => handleDeleteCarsonLine(carsonLine._id)}
+                    >
+                        remove
+                </Link>
+                }
             </div>
         </div>
 

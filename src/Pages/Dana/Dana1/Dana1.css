@@ -11,6 +11,11 @@
     background-image: url(https://i.postimg.cc/6QnpcZ7H/Screen-Shot-2020-12-01-at-4-12-41-PM.png);
     background-size: cover;
 }
+
+.dana-text {
+    color: white;
+}
+
 .link {
     color: white;
 }
@@ -34,7 +39,6 @@
         width: 320px;
     }
     .link {
-        /* color: #fff3de; */
         color: black;
     }
 }

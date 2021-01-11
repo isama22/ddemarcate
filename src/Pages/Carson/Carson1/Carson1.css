@@ -11,13 +11,7 @@
     background-image: url(https://i.postimg.cc/VNdHZnQq/Screen-Shot-2020-06-18-at-4-21-39-PM.png);
     background-size: cover;
 }
-/* .link {
-    color: black;
-} */
 
-.link:hover {
-    color: red;
-}
 
 @media screen and (max-width: 375px) {
     .carson-pages {
@@ -35,8 +29,5 @@
         width: 320px;
         color: white;
     }
-    .link {
-        /* color: #fff3de; */
-        color: white;
-    }
+
 }
