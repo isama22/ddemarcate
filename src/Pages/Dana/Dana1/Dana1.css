@@ -34,6 +34,7 @@
         width: 320px;
     }
     .link {
-        color: #fff3de;
+        /* color: #fff3de; */
+        color: black;
     }
 }

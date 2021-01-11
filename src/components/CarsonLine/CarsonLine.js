@@ -19,12 +19,12 @@ function CarsonLine({ carsonLine, handleDeleteCarsonLine, user }) {
             }
             &nbsp;&nbsp;&nbsp;
             {user._id === carsonLine.user &&
-                <p
+                <a
                     className='delete'
                     onClick={() => handleDeleteCarsonLine(carsonLine._id)}
                 >
                     remove
-                </p>
+                </a>
             }
             </div>
         </div>
