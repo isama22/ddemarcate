@@ -5,3 +5,8 @@
   align-items: center;
   margin-bottom: 50px;
 }
+
+.signup-header {
+  display: flex;
+  justify-content: center;
+}
