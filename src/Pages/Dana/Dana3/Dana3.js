@@ -6,10 +6,10 @@ const Dana3 = () => {
   return (
     <div className="dana-pages">
       <div className="dana-text">
-      <p>The heat out there this evening</p>
-      <p>is contained heat like things keep applicable boxes</p>
-      <p>at the ready then subsume their diverging constituent parts</p>
-        <Link className="link" to="/adddanaline">long ambivalent talks into midnight, all those</Link>
+      <p>Let me speak with expressive</p>
+      <p>hesitation & a feeling for</p>
+      <p>interment why even</p>
+        <Link className="link" to="/adddanaline">lineate what isn’t broken by</Link>
       </div>
     </div>
   );

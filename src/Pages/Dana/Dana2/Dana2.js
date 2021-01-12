@@ -6,9 +6,9 @@ const Dana2 = () => {
   return (
     <div className="dana-pages">
       <div className="dana-text">
-        <p>The heat out there this evening</p>
-        <p>is contained heat like things keep applicable boxes</p>
-        <Link className="link" to="/dana3">at the ready then subsume their diverging constituent parts</Link>
+        <p>Let me speak with expressive</p>
+        <p>hesitation & a feeling for</p>
+        <Link className="link" to="/dana3">interment why even</Link>
       </div>
     </div>
   );

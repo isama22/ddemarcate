@@ -21,42 +21,43 @@ class DanaPage extends Component {
                     <div className="original-text">
                         <div className="poem-div">
                             <p className="poem-header">
-                                <strong>Don't Let Me Be Wistful</strong><em>Dana Ward</em>
+                                <strong>Between Here & There</strong><em>Dana Ward</em>
                             </p>
-                            The heat out there this evening
+                            Let me speak with expressive
                                 <br /><br />
-                            is contained heat like things keep applicable boxes
+                                hesitation & a feeling for
                                 <br /><br />
-                            at the ready then subsume their diverging constituent parts
+                                interment why even
+
                                 <br /><br />
-                            long ambivalent talks into midnight, all those
+                                lineate what isn’t broken by
                                 <br /><br />
-                            glowy Sophia Coppola movies, Prosecco
+                                music let me speak with
                                 <br /><br />
-                            the sexiest records I know. I don’t feel
+                                inextricable reluctance.
                                 <br /><br />
-                            how I know anymore to be more than something seeking
+                                I want to tear the heart
                                 <br /><br />
-                            my appalling lack of cinematic knowledge, fictive innocence
+                                from refused convalescence
                                 <br /><br />
-                            & something like the break-down of those little boxes
+                                & feed it those long fronds
                                 <br /><br />
-                            little tombs put their hands up in front of my mouth
+                                of river bed grass. I want to
                                 <br /><br />
-                            there’s a tacitly humiliating eulogy to drown out couldn’t feel
+                                tear the heart out of style
                                 <br /><br />
-                            much more stupid about feeling stupid over feeling
+                                & put it between
                                 <br /><br />
-                            stupid, living. Let me go & watch something
+                                utter thrall & the infancy
                                 <br /><br />
-                            moving several images some of them symbolize humility broken
+                                of all things impure.
                                 <br /><br />
-                            postures bloodshot eyes, intimately talking through this
+                                Torn out, a flame thickens
                                 <br /><br />
-                            publicly I am not developing at all but just the same.
+                                between us
                                 <a
                                 className="poem-link"
-                                href="https://www.poetryfoundation.org/poems/55982/dont-let-me-be-wistful"
+                                href="https://www.poetryfoundation.org/poems/55983/between-here-there"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >...
