@@ -24,12 +24,14 @@ import Derksen3 from "../../Pages/Derksen/Derksen3/Derksen3";
 import userService from '../../utils/userService';
 import * as danaLinesAPI from '../../services/danaLines-api'
 import * as carsonLinesAPI from '../../services/carsonLines-api'
+import * as derksenLinesAPI from '../../services/derksenLines-api'
 
 class App extends Component {
   state = {
     user: userService.getUser(),
     danaLines: [],
-    carsonLines: []
+    carsonLines: [],
+    derksenLines: []
   }
 
   handleLogout = () => {
@@ -109,7 +111,8 @@ class App extends Component {
   async componentDidMount() {
     const danaLines = await danaLinesAPI.getAll()
     const carsonLines = await carsonLinesAPI.getAll()
-    this.setState({ danaLines, carsonLines })
+    const derksenLines = await derksenLinesAPI.getAll()
+    this.setState({ danaLines, carsonLines, derksenLines })
   }
 
 
