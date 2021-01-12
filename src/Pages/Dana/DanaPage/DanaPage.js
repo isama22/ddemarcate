@@ -18,17 +18,16 @@ class DanaPage extends Component {
         return (
             <>
                 <div className="dana-page">
-                    <div className="original-text">
-                        <div className="poem-div">
+                    <div className="dana-original-text">
+                        <div className="dana-poem-div">
                             <p className="poem-header">
-                                <strong>Between Here & There</strong><em>Dana Ward</em>
+                                <strong>Between Here & There</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Dana Ward</em>
                             </p>
-                            Let me speak with expressive
+                                Let me speak with expressive
                                 <br /><br />
                                 hesitation & a feeling for
                                 <br /><br />
                                 interment why even
-
                                 <br /><br />
                                 lineate what isn’t broken by
                                 <br /><br />

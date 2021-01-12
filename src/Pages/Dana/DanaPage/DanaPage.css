@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.original-text {
+.dana-original-text {
     background-color: #8fffda;
     border: solid 2px blue;
     height: 80%;
@@ -20,14 +20,15 @@
     align-items: center;
 }
 
-.poem-div {
+.dana-poem-div {
     font-size: 10px;
     overflow: scroll;
     margin-bottom: 20px;
     padding: 10px;
+    text-transform: none;
 }
 
-.poem-div::-webkit-scrollbar {
+.dana-poem-div::-webkit-scrollbar {
     display: none;
 }
 
@@ -59,11 +60,11 @@
     color: red;
 }
 @media screen and (max-width: 375px) {
-    .original-text {
+    .dana-original-text {
         width: 80%;
         /* height: 70%; */
     }
-    .poem-div {
+    .dana-poem-div {
         font-size: 9px;
     }
     .start-over-link {
