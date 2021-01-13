@@ -8,12 +8,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(https://i.postimg.cc/6QnpcZ7H/Screen-Shot-2020-12-01-at-4-12-41-PM.png);
+    background-image: url(https://i.postimg.cc/pXpVVLZj/Screen-Shot-2021-01-12-at-7-25-53-PM.png);
     background-size: cover;
 }
 
 .dana-text {
     color: white;
+    text-shadow: 5px 3px 8px #050505;
 }
 
 .link {
@@ -28,7 +29,7 @@
     .dana-pages {
         width: 375px;
         height: 100%;
-        background-image: url(https://i.postimg.cc/zfGcXjVx/Screen-Shot-2020-12-22-at-10-04-39-PM.png);
+        background-image: url(https://i.postimg.cc/pXpVVLZj/Screen-Shot-2021-01-12-at-7-25-53-PM.png);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -39,6 +40,6 @@
         width: 320px;
     }
     .link {
-        color: black;
+        color: grey;
     }
 }
