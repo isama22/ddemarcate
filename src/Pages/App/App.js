@@ -103,6 +103,14 @@ class App extends Component {
     const carsonLines = await carsonLinesAPI.getAll()
     this.setState({ carsonLines: carsonLines })
   }
+  //derksen functions
+  handleAddDerksenLine = async newDerksenData => {
+    const newDerksen = await derksenLinesAPI.create(newDerksenData)
+    this.setState(state => ({
+      derksenLines: [...state.derksenLines, newDerksen]
+    }),
+      () => this.props.history.push('/derksenpage'))
+  }
   //helper function//
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
