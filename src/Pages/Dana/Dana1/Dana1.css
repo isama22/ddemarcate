@@ -23,8 +23,7 @@
 }
 
 .link:hover {
-    /* color: red; */
-    font-weight: bold;
+    color: red;
 }
 
 @media screen and (max-width: 375px) {
