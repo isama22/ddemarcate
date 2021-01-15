@@ -21,6 +21,7 @@ import CarsonEdit from '../../Pages/Carson/CarsonEdit/CarsonEdit'
 import Derksen1 from '../../Pages/Derksen/Derksen1/Derksen1'
 import Derksen2 from "../../Pages/Derksen/Derksen2/Derksen2";
 import Derksen3 from "../../Pages/Derksen/Derksen3/Derksen3";
+import AddDerksenLine from '../../Pages/Derksen/AddDerksenLine/AddDerksenLine'
 import userService from '../../utils/userService';
 import * as danaLinesAPI from '../../services/danaLines-api'
 import * as carsonLinesAPI from '../../services/carsonLines-api'
@@ -203,6 +204,17 @@ class App extends Component {
               userService.getUser() ?
                 <AddCarsonLine
                   handleAddCarsonLine={this.handleAddCarsonLine}
+                />
+                :
+                <Redirect to='/login' />}
+          />
+          <Route
+            exact path="/addderksenline"
+            render={() =>
+              userService.getUser() ?
+                <AddDerksenLine
+                  handleAddDerksenLine={this.handleAddDerksenLine}
+
                 />
                 :
                 <Redirect to='/login' />}
