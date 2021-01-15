@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './DerksenPage.css';
-// import DanaLines from '../../../components/DanaLines/DanaLines'
+import DerksenLines from '../../../components/DerksenLines/DerksenLines'
 import * as derksenLinesAPI from '../../../services/derksenLines-api'
 import { Link } from 'react-router-dom'
 
@@ -69,16 +69,16 @@ class DerksenPage extends Component {
                             >...
                                 </a>
                             <div>
-                                {/* <DanaLines
-                                    danaLines={this.state.danaLines}
-                                    handleGetAllDanaLines={this.props.handleGetAllDanaLines}
-                                    handleDeleteDanaLine={this.props.handleDeleteDanaLine}
+                                <DerksenLines
+                                    derksenLines={this.state.derksenLines}
+                                    handleGetAllDerksenLines={this.props.handleGetAllDerksenLines}
+                                    handleDeleteDerksenLine={this.props.handleDeleteDerksenLine}
                                     user={this.props.user}
-                                /> */}
+                                />
                             </div>
                         </div>
                         <div className="start-over-link">
-                            <Link to="/adddanaline" >add another line</Link>
+                            <Link to="/addderksenline" >add another line</Link>
                             <Link to="/enter" >try another poem</Link>
                         </div>
                     </div>

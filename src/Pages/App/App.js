@@ -112,6 +112,11 @@ class App extends Component {
     }),
       () => this.props.history.push('/derksenpage'))
   }
+
+  handleGetAllDerksenLines = async () => {
+    const derksenLines = await derksenLinesAPI.getAll()
+    this.setState({ derksenLines: derksenLines })
+  }
   //helper function//
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
@@ -175,7 +180,6 @@ class App extends Component {
               userService.getUser() ?
                 <AddDanaLine
                   handleAddDanaLine={this.handleAddDanaLine}
-
                 />
                 :
                 <Redirect to='/login' />}
@@ -250,7 +254,6 @@ class App extends Component {
               userService.getUser() ?
                 <AddDerksenLine
                   handleAddDerksenLine={this.handleAddDerksenLine}
-
                 />
                 :
                 <Redirect to='/login' />}

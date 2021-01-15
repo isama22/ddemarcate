@@ -19,3 +19,6 @@ export function create(derksenLine) {
     return fetch(BASE_URL, options).then(res => res.json())
 }
 
+export function getOne(derksenLine) {
+    return fetch(`${BASE_URL}/${derksenLine._id}`).then(res => res.json())
+}

@@ -51,6 +51,7 @@ app.use('/api/users', require('./routes/api/users'));
 app.use(require('./config/auth'));
 app.use('/api/danaLines', require('./routes/api/danaLines'));
 app.use('/api/carsonLines', require('./routes/api/carsonLines'));
+app.use('/api/derksenLines', require('./routes/api/derksenLines'));
 
 // The following "catch all" route (note the *)is necessary
 // for a SPA's client-side routing to properly work 

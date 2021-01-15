@@ -14,7 +14,7 @@ class AddDerksenLine extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    this.props.handleAddDanaLine(this.state.formData, this.props.history)
+    this.props.handleAddDerksenLine(this.state.formData, this.props.history)
   }
   handleChange = e => {
     const formData = { ...this.state.formData, [e.target.name]: e.target.value }
