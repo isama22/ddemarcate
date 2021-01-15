@@ -1,5 +1,4 @@
 import React from 'react';
-import './Derksen3.css';
 import { Link } from 'react-router-dom';
 
 const Derksen3 = () => {
@@ -10,7 +9,7 @@ const Derksen3 = () => {
         <p>There goes the</p>
         <p>aluminum, the antimony, the arsenic</p>
         <p>the barium, the cadmium,</p>
-        <Link className="link" to="/addderksenpost">the cesium, the gadolinium</Link>
+        <Link className="link" to="/addderksenline">the cesium, the gadolinium</Link>
       </div>
     </div>
   );

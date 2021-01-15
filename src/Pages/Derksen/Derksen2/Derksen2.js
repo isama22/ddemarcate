@@ -1,5 +1,4 @@
 import React from 'react';
-import './Derksen2.css';
 import { Link } from 'react-router-dom';
 
 const Derksen2 = () => {

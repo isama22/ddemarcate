@@ -22,6 +22,7 @@ import Derksen1 from '../../Pages/Derksen/Derksen1/Derksen1'
 import Derksen2 from "../../Pages/Derksen/Derksen2/Derksen2";
 import Derksen3 from "../../Pages/Derksen/Derksen3/Derksen3";
 import AddDerksenLine from '../../Pages/Derksen/AddDerksenLine/AddDerksenLine'
+import DerksenPage from '../../Pages/Derksen/DerksenPage/DerksenPage'
 import userService from '../../utils/userService';
 import * as danaLinesAPI from '../../services/danaLines-api'
 import * as carsonLinesAPI from '../../services/carsonLines-api'
@@ -217,17 +218,6 @@ class App extends Component {
                 <Redirect to='/login' />}
           />
           <Route
-            exact path="/addderksenline"
-            render={() =>
-              userService.getUser() ?
-                <AddDerksenLine
-                  handleAddDerksenLine={this.handleAddDerksenLine}
-
-                />
-                :
-                <Redirect to='/login' />}
-          />
-          <Route
             exact path="/carsonpage"
             render={({ history }) =>
               userService.getUser() ?
@@ -254,6 +244,31 @@ class App extends Component {
                 <Redirect to='/login' />
             }
           />
+          <Route
+            exact path="/addderksenline"
+            render={() =>
+              userService.getUser() ?
+                <AddDerksenLine
+                  handleAddDerksenLine={this.handleAddDerksenLine}
+
+                />
+                :
+                <Redirect to='/login' />}
+          />
+          <Route
+            exact path="/derksenpage"
+            render={({ history }) =>
+              userService.getUser() ?
+                <DerksenPage
+                  derksenLines={this.state.derksenLines}
+                  handleGetAllDerksenLines={this.props.handleGetAllDerksenLines}
+                  history={history}
+                  user={this.state.user}
+                  // handleDeleteDerksenLine={this.handleDeleteDerksenLine}
+                />
+                :
+                <Redirect to="/login" />
+            } />
         </Switch>
       </div>
     );
