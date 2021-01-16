@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Home from '../../pages/Home/Home'
-import EnterPage from '../../pages/Enterpage/EnterPage';
+import Home from '../../Pages/Home/Home'
+import EnterPage from '../../Pages/Enterpage/EnterPage';
 import NavBar from '../../components/NavBar/NavBar'
-import LoginPage from '../../pages/LoginPage/LoginPage'
-import SignupPage from '../../pages/SignupPage/SignupPage'
-import Dana1 from '../../pages/Dana/Dana1/Dana1'
-import Dana2 from '../../pages/Dana/Dana2/Dana2'
-import Dana3 from '../../pages/Dana/Dana3/Dana3'
-import AddDanaLine from '../../pages/Dana/AddDanaLine/AddDanaLine'
-import DanaEdit from '../../pages/Dana/DanaEdit/DanaEdit'
-import DanaPage from '../../pages/Dana/DanaPage/DanaPage'
-import Carson1 from '../../pages/Carson/Carson1/Carson1'
-import Carson2 from "../../pages/Carson/Carson2/Carson2";
-import Carson3 from "../../pages/Carson/Carson3/Carson3";
-import AddCarsonLine from '../../pages/Carson/AddCarsonLine/AddCarsonLine'
-import CarsonPage from '../../pages/Carson/Carsonpage/CarsonPage'
-import CarsonEdit from '../../pages/Carson/CarsonEdit/CarsonEdit'
-import Derksen1 from '../../pages/Derksen/Derksen1/Derksen1'
-import Derksen2 from "../../pages/Derksen/Derksen2/Derksen2";
-import Derksen3 from "../../pages/Derksen/Derksen3/Derksen3";
-import AddDerksenLine from '../../pages/Derksen/AddDerksenLine/AddDerksenLine'
-import DerksenPage from '../../pages/Derksen/DerksenPage/DerksenPage'
-import DerksenEdit from '../../pages/Derksen/DerksenEdit/DerksenEdit'
+import LoginPage from '../../Pages/LoginPage/LoginPage'
+import SignupPage from '../../Pages/SignupPage/SignupPage'
+import Dana1 from '../../Pages/Dana/Dana1/Dana1'
+import Dana2 from '../../Pages/Dana/Dana2/Dana2'
+import Dana3 from '../../Pages/Dana/Dana3/Dana3'
+import AddDanaLine from '../../Pages/Dana/AddDanaLine/AddDanaLine'
+import DanaEdit from '../../Pages/Dana/DanaEdit/DanaEdit'
+import DanaPage from '../../Pages/Dana/DanaPage/DanaPage'
+import Carson1 from '../../Pages/Carson/Carson1/Carson1'
+import Carson2 from "../../Pages/Carson/Carson2/Carson2";
+import Carson3 from "../../Pages/Carson/Carson3/Carson3";
+import AddCarsonLine from '../../Pages/Carson/AddCarsonLine/AddCarsonLine'
+import CarsonPage from '../../Pages/Carson/Carsonpage/CarsonPage'
+import CarsonEdit from '../../Pages/Carson/CarsonEdit/CarsonEdit'
+import Derksen1 from '../../Pages/Derksen/Derksen1/Derksen1'
+import Derksen2 from "../../Pages/Derksen/Derksen2/Derksen2";
+import Derksen3 from "../../Pages/Derksen/Derksen3/Derksen3";
+import AddDerksenLine from '../../Pages/Derksen/AddDerksenLine/AddDerksenLine'
+import DerksenPage from '../../Pages/Derksen/DerksenPage/DerksenPage'
+import DerksenEdit from '../../Pages/Derksen/DerksenEdit/DerksenEdit'
 import userService from '../../utils/userService';
 import * as danaLinesAPI from '../../services/danaLines-api'
 import * as carsonLinesAPI from '../../services/carsonLines-api'
