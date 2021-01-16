@@ -12,7 +12,7 @@ const NavBar = (props) => {
                 <Link to="" className="nav-links" onClick={props.handleLogout}>logout</Link>
             </div>
             <div>
-                <Link to="/" className="nav-links">&#9826;</Link>
+                <Link to="/" className="nav-links">	&diams;</Link>
             </div>
 
         </div>
