@@ -28,7 +28,7 @@ export function update(derksenLine) {
         },
         body: JSON.stringify(derksenLine)
     }
-    return fetch(`${BASE_URL}/${erksenaLine._id}`, options).then(res => res.json())
+    return fetch(`${BASE_URL}/${derksenLine._id}`, options).then(res => res.json())
 }
 
 export function getOne(derksenLine) {
