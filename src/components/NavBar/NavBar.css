@@ -2,15 +2,26 @@
     background-color: black;
     color: lightgray;
     padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .nav-links {
     color: lightgray;
 }
-
+.nav-container-logged-out {
+    background-color: black;
+    color: lightgray;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
 @media screen and (max-width: 375px) {
     .nav-container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
+
 }
