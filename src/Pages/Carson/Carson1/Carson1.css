@@ -15,6 +15,13 @@
 .carson-text {
     text-shadow: 5px 3px 8px #050505;
 }
+
+.carson-link {
+    color: white;
+}
+.carson-link:hover {
+    color: red;
+}
 @media screen and (max-width: 375px) {
     .carson-pages {
         background-image: url(https://i.postimg.cc/zfyPCc6T/Screen-Shot-2020-05-16-at-12-15-40-AM.png);
@@ -31,5 +38,7 @@
         width: 320px;
         color: white;
     }
-
+    .carson-link {
+        color: black;
+    }
 }

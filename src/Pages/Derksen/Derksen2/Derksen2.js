@@ -7,7 +7,7 @@ const Derksen2 = () => {
       <div className="derksen-text">
       <p>There goes the</p>
         <p>aluminum, the antimony, the arsenic</p>
-        <Link className="link" to="/derksen3">the barium, the cadmium,</Link>
+        <Link className="derksen-link" to="/derksen3">the barium, the cadmium,</Link>
       </div>
     </div>
   );

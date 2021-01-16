@@ -33,6 +33,7 @@ class AddDerksenLine extends Component {
             autoComplete="off"
             onSubmit={this.handleSubmit}
           >
+            <p className="add-a-line">Add a Line</p>
             <div className='form-item'>
               <input
                 className="dana-line-text"

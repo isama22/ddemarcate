@@ -7,7 +7,7 @@ const Carson1 = () => {
     <div className="carson-pages">
       <div className="carson-text">
       <p>I can hear little clicks inside my dream.</p>
-        <Link className="link" to="/carson2">Night drips its silver tap</Link>
+        <Link className="carson-link" to="/carson2">Night drips its silver tap</Link>
       </div>
     </div>
   );

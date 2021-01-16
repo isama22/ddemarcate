@@ -19,6 +19,11 @@
     margin: 5px;
 }
 
+.add-a-line {
+    margin-left: 45px;
+    text-transform: none;
+}
+
 .form-item {
     padding: 10px;
 }

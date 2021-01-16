@@ -17,6 +17,12 @@
     color: #FFFFFF;
 }
 
+.derksen-link {
+    color: white;
+}
+.derksen-link:hover {
+    color: red;
+}
 @media screen and (max-width: 375px) {
     .derksen-pages {
         width: 375px;
@@ -30,5 +36,8 @@
     }
     .derksen-text {
         width: 320px;
+    }
+    .derksen-link {
+        color: #00FF00;
     }
 }
