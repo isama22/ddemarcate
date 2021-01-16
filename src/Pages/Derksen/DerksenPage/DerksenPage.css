@@ -1,6 +1,6 @@
 .derksen-page {
-    /* background-image: url("https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png"); 
-    background-size: contain; */
+    background-image: url("https://i.postimg.cc/wx20V6D7/Screen-Shot-2021-01-12-at-7-13-50-PM.png"); 
+    background-size: cover;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -10,7 +10,7 @@
 }
 
 .derksen-original-text {
-    background-color: #540b06;
+    background-color:  rgb(41,0,0);
     border: solid 4px #540b06;
     color: #c46a68;
     height: 80%;

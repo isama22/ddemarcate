@@ -60,7 +60,6 @@ class DerksenPage extends Component {
                             majesterial streets
                             <br /><br />
                             that afford such views
-                            <br /><br />
                                 <a
                                 className="poem-link"
                                 href="https://www.poetryfoundation.org/poems/146552/in-memory-of-my-heavy-metal-years"
