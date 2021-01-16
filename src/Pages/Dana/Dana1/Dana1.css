@@ -44,4 +44,7 @@
         color: grey;
         /* color: #7fffd4; */
     }
+    .link:hover {
+        color: grey;
+    }
 }
