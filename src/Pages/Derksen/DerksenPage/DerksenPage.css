@@ -33,8 +33,42 @@
     display: none;
 }
 
+.derksen-poem-header {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 10px;
+    border-bottom: black 2px solid;
+}
+.derksen-start-over-link {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 99%;
+    margin: 10px;
+}
+.derksen-start-over-link>a {
+    color: red;
+}
 @media screen and (max-width: 375px) {
     .derksen-original-text {
         width: 80%;
+    }
+    .derksen-poem-div {
+        width: 90%;
+    }
+    .derksen-poem-header {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+    }
+    .derksen-start-over-link {
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-top: solid .5px #540b06;
+        padding: 5px;
     }
 }

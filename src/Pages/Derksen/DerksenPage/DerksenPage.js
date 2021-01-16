@@ -20,9 +20,10 @@ class DerksenPage extends Component {
                 <div className="derksen-page">
                     <div className="derksen-original-text">
                         <div className="derksen-poem-div">
-                            <p className="poem-header">
+                            <p className="derksen-poem-header">
                                 <strong>In Memory of My Heavy Metal Years</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Jeff Derksen</em>
                             </p>
+                            <p>
                             There goes the
                             <br /><br />
                             aluminum, the antimony, the arsenic
@@ -60,6 +61,7 @@ class DerksenPage extends Component {
                             majesterial streets
                             <br /><br />
                             that afford such views
+                            </p>
                                 <a
                                 className="poem-link"
                                 href="https://www.poetryfoundation.org/poems/146552/in-memory-of-my-heavy-metal-years"
@@ -76,7 +78,7 @@ class DerksenPage extends Component {
                                 />
                             </div>
                         </div>
-                        <div className="start-over-link">
+                        <div className="derksen-start-over-link">
                             <Link to="/addderksenline" >add another line</Link>
                             <Link to="/enter" >try another poem</Link>
                         </div>

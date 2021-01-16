@@ -23,6 +23,7 @@ import Derksen2 from "../../Pages/Derksen/Derksen2/Derksen2";
 import Derksen3 from "../../Pages/Derksen/Derksen3/Derksen3";
 import AddDerksenLine from '../../Pages/Derksen/AddDerksenLine/AddDerksenLine'
 import DerksenPage from '../../Pages/Derksen/DerksenPage/DerksenPage'
+import DerksenEdit from '../../Pages/Derksen/DerksenEdit/DerksenEdit'
 import userService from '../../utils/userService';
 import * as danaLinesAPI from '../../services/danaLines-api'
 import * as carsonLinesAPI from '../../services/carsonLines-api'
@@ -290,6 +291,19 @@ class App extends Component {
                 :
                 <Redirect to="/login" />
             } />
+          <Route
+            exact path="/editderksen"
+            render={({ location }) =>
+              userService.getUser() ?
+                <DerksenEdit
+                  handleUpdateDerksenLine={this.handleUpdateDerksenLine}
+                  location={location}
+                  user={this.state.user}
+                />
+                :
+                <Redirect to='/login' />
+            }
+          />
         </Switch>
       </div>
     );
