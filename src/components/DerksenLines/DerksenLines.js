@@ -12,7 +12,7 @@ class DerksenLines extends Component{
                           derksenLine={derksenLine} 
                           key={derksenLine._id}
                           handleGetAllDerksenLines={this.props.handleGetAllDerksenLines}
-                        //   handleDeleteDerksenLine={this.props.handleDeleteDerksenLine}
+                          handleDeleteDerksenLine={this.props.handleDeleteDerksenLine}
                           user={this.props.user}
                         />
                       )}

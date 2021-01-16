@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 // import './DanaLine.css';
 
-function DerksenLine({ derksenLine, user }) {
+function DerksenLine({ derksenLine, handleDeleteDerksenLine, user }) {
     return (
 
         <div className="added-lines">
@@ -18,7 +18,7 @@ function DerksenLine({ derksenLine, user }) {
                     </Link>
                 }
                 &nbsp;&nbsp;&nbsp;
-            {/* {user._id === danaLine.user &&
+            {user._id === derksenLine.user &&
                     <Link
                     to=""
                         className='delete'
@@ -26,7 +26,7 @@ function DerksenLine({ derksenLine, user }) {
                     >
                         remove
                 </Link>
-                } */}
+                }
             </div>
         </div>
 

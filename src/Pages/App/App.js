@@ -113,6 +113,24 @@ class App extends Component {
       () => this.props.history.push('/derksenpage'))
   }
 
+  handleUpdateDerksenLine = async updatedDerksenLineData => {
+    const updatedDerksenLine = await derksenLinesAPI.update(updatedDerksenLineData)
+    const newDerksenLinesArray = this.state.derksenLines.map(e =>
+      e._id === updatedDerksenLine._id ? updatedDerksenLine : e
+    )
+    this.setState(
+      { derksenLines: newDerksenLinesArray },
+      () => this.props.history.push('/derksenpage')
+    )
+  }
+
+  handleDeleteDerksenLine = async id => {
+    await derksenLinesAPI.deleteOne(id)
+    this.setState(state => ({
+      derksenLines: state.derksenLines.filter(derksenLine => derksenLine._id !== id)
+    }), () => this.props.history.push('/derksenpage'))
+  }
+
   handleGetAllDerksenLines = async () => {
     const derksenLines = await derksenLinesAPI.getAll()
     this.setState({ derksenLines: derksenLines })
@@ -267,7 +285,7 @@ class App extends Component {
                   handleGetAllDerksenLines={this.props.handleGetAllDerksenLines}
                   history={history}
                   user={this.state.user}
-                  // handleDeleteDerksenLine={this.handleDeleteDerksenLine}
+                  handleDeleteDerksenLine={this.handleDeleteDerksenLine}
                 />
                 :
                 <Redirect to="/login" />
