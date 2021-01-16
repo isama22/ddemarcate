@@ -41,6 +41,9 @@
     padding: 10px;
     border-bottom: black 2px solid;
 }
+.derksen-page-text {
+    margin: 10px;
+}
 .derksen-start-over-link {
     font-size: 10px;
     display: flex;

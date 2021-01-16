@@ -23,7 +23,7 @@ class DerksenPage extends Component {
                             <p className="derksen-poem-header">
                                 <strong>In Memory of My Heavy Metal Years</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Jeff Derksen</em>
                             </p>
-                            <p>
+                            <p className="derksen-page-text">
                             There goes the
                             <br /><br />
                             aluminum, the antimony, the arsenic
