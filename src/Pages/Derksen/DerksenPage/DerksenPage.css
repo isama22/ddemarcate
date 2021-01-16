@@ -1,0 +1,34 @@
+.derksen-page {
+    /* background-image: url("https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png"); 
+    background-size: contain; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.derksen-original-text {
+    background-color: #540b06;
+    border: solid 4px #540b06;
+    color: #c46a68;
+    height: 80%;
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.derksen-poem-div {
+    font-size: 10px;
+    overflow: scroll;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-transform: none;
+}
+
+.derksen-poem-div::-webkit-scrollbar {
+    display: none;
+}

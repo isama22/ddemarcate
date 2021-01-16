@@ -17,9 +17,9 @@ class DerksenPage extends Component {
     render() {
         return (
             <>
-                <div className="dana-page">
-                    <div className="dana-original-text">
-                        <div className="dana-poem-div">
+                <div className="derksen-page">
+                    <div className="derksen-original-text">
+                        <div className="derksen-poem-div">
                             <p className="poem-header">
                                 <strong>In Memory of My Heavy Metal Years</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Jeff Derksen</em>
                             </p>
