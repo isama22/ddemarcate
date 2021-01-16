@@ -40,4 +40,7 @@
     .derksen-link {
         color: #00FF00;
     }
+    .derksen-link:hover {
+        color: #00FF00;
+    }
 }
