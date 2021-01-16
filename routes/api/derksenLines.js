@@ -6,7 +6,10 @@ router.get('/', derksenLinesCtrl.index)
 router.get('/:id', derksenLinesCtrl.show)
 
 router.use(require('../../config/auth'))
-router.post('/', checkAuth, derksenLinesCtrl.create)
+router.post('/', checkAuth, derksenLinesCtrl.create),
+router.put('/:id', checkAuth, derksenLinesCtrl.update),
+router.delete('/:id', checkAuth, derksenLinesCtrl.delete)
+
 
 function checkAuth(req, res, next){
     if (req.user) return next()
