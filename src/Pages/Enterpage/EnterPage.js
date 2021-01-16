@@ -1,7 +1,6 @@
 import React from 'react';
 import './EnterPage.css';
 import { Link } from 'react-router-dom';
-// import Dana1 from '../../Pages/Dana/Dana1/Dana1';
 
 const EnterPage = () => {
   return (
