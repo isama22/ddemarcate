@@ -61,7 +61,6 @@ class DerksenPage extends Component {
                             majesterial streets
                             <br /><br />
                             that afford such views
-                            </p>
                                 <a
                                 className="poem-link"
                                 href="https://www.poetryfoundation.org/poems/146552/in-memory-of-my-heavy-metal-years"
@@ -69,6 +68,7 @@ class DerksenPage extends Component {
                                 rel="noopener noreferrer"
                             >...
                                 </a>
+                            </p>
                             <div>
                                 <DerksenLines
                                     derksenLines={this.state.derksenLines}
