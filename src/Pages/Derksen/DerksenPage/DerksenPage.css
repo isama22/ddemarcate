@@ -32,3 +32,9 @@
 .derksen-poem-div::-webkit-scrollbar {
     display: none;
 }
+
+@media screen and (max-width: 375px) {
+    .derksen-original-text {
+        width: 80%;
+    }
+}
