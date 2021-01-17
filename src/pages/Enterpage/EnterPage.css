@@ -40,7 +40,9 @@
 .follow-img {
     width: 30vw;
 }
-
+.mobile-follow-img {
+    display: none;
+}
 @media screen and (max-width: 683px) {
     .follow-img {
         width: 200px;
@@ -61,8 +63,15 @@
         background-size: cover;
     }
     .follow-img {
+        /* width: 280px;
+        border: solid 1px black; */
+        display: none;
+    }
+    .mobile-follow-img {
         width: 280px;
         border: solid 1px black;
+        display: block;
+        background-color: #fff4df;
     }
     .follow-links {
         background-color: #fff4df;
