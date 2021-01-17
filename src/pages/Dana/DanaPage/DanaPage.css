@@ -10,8 +10,11 @@
 }
 
 .dana-original-text {
-    background-color: #8fffda;
-    border: solid 2px blue;
+    /* background-color: #8fffda;
+    border: solid 2px blue; */
+    background-color: blue;
+    border: solid 2px maroon;
+    color: #c46a68;
     height: 80%;
     width: 35%;
     display: flex;
@@ -54,11 +57,12 @@
     justify-content: space-evenly;
     width: 99%;
     margin: 10px;
-    
 }
+
 .start-over-link>a {
     color: red;
 }
+
 @media screen and (max-width: 375px) {
     .dana-original-text {
         width: 80%;
