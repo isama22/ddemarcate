@@ -20,13 +20,13 @@ Content column 1 | Content column 2 -->
 
 <br><br>
 
-### Wireframes:
+### Wireframes
 
 ![](https://i.postimg.cc/ryJXNVp0/AAAAA.png)
 
 <br><br>
 
-### Screenshots
+### A Look At The App
 
 ![](https://i.postimg.cc/L8ZJbwpP/Screen-Shot-2021-01-12-at-5-45-17-PM.png)
 ![](https://i.postimg.cc/jSj5ps7V/Screen-Shot-2021-01-18-at-12-10-27-PM.png)
