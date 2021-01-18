@@ -7,16 +7,8 @@ Mongo, Express, React, Node, JWT Authorization.
 
 <br><br>
 
-<!-- <strong>
-<a href="https://trello.com/b/MLlfs0ya/project-4" target="_blank">Trello</a></strong>
-<strong><a href="https://ddemarcate.herokuapp.com/" target="_blank">Visit</a></strong> -->
-
-
 <a href="https://trello.com/b/MLlfs0ya/project-4" target="_blank">Trello</a> | <a href="https://ddemarcate.herokuapp.com/" target="_blank">Visit</a>
 ------------ | -------------
-<!-- https://trello.com/b/MLlfs0ya/project-4 | https://ddemarcate.herokuapp.com/
-Content column 1 | Content column 2 -->
-
 
 <br><br>
 
@@ -26,7 +18,7 @@ Content column 1 | Content column 2 -->
 
 <br><br>
 
-### A Look At The App
+### A Look At The App -
 
 ![](https://i.postimg.cc/L8ZJbwpP/Screen-Shot-2021-01-12-at-5-45-17-PM.png)
 ![](https://i.postimg.cc/jSj5ps7V/Screen-Shot-2021-01-18-at-12-10-27-PM.png)
@@ -40,4 +32,4 @@ Content column 1 | Content column 2 -->
 
 ### Next Steps
 
-I want to add in more lines to each poem's line path, clean up the forms and the end page's UI, have all three poem routes available on each path to enable crossover, create functionality to have the app keep score of how many lines from each poem you selected and show you the poem that you chose the most lines from.
+I'd like to have all three poem routes available on each path to enable crossover, create functionality to have the app keep score of how many lines from each poem you selected and show you the poem that you chose the most lines from.
