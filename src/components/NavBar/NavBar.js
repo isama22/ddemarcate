@@ -13,6 +13,7 @@ const NavBar = (props) => {
             </div>
             <div>
                 <Link to="/" className="nav-links">	&diams;</Link>
+                &nbsp;
             </div>
 
         </div>
