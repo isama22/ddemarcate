@@ -3,18 +3,29 @@ Demarcate is a collaborative exquisite corpse style poetry app. Users can log in
 Demarcate is a verb that means to set the limits or boundaries of, or to be seperated or distinguished from. It for me also evokes the idea of mark making. These poems are both limited in length and changed by the multiple visitors that leave behind their individual mark.
 
 ## Technologies
-| Mongo, Express, React, Node, JWT Authorization. |
-| ------------- |:-------------:| -----:|-----:|
-<br><br>
-<strong><a href="https://trello.com/b/MLlfs0ya/project-4" target="_blank">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trello</a></strong>
-<strong><a href="https://ddemarcate.herokuapp.com/" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visit</a></strong>
+Mongo, Express, React, Node, JWT Authorization.
 
 <br><br>
+
+<!-- <strong>
+<a href="https://trello.com/b/MLlfs0ya/project-4" target="_blank">Trello</a></strong>
+<strong><a href="https://ddemarcate.herokuapp.com/" target="_blank">Visit</a></strong> -->
+
+
+Trello | visit
+------------ | -------------
+https://trello.com/b/MLlfs0ya/project-4 | https://ddemarcate.herokuapp.com/
+Content column 1 | Content column 2
+
+
+<br><br>
+
 ## Wireframes:
+
 ![](https://i.postimg.cc/ryJXNVp0/AAAAA.png)
 
 <br><br>
+
 ## Screenshots
 
 ![](https://i.postimg.cc/L8ZJbwpP/Screen-Shot-2021-01-12-at-5-45-17-PM.png)
@@ -26,5 +37,7 @@ Demarcate is a verb that means to set the limits or boundaries of, or to be sepe
 ![](https://i.postimg.cc/9MbsHj9S/Screen-Shot-2021-01-18-at-2-11-06-PM.png)
 
 <br><br>
+
 ## Next Steps
+
 I want to add in more lines to each poem's line path, clean up the forms and the end page's UI, have all three poem routes available on each path to enable crossover, create functionality to have the app keep score of how many lines from each poem you selected and show you the poem that you chose the most lines from.
