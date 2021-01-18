@@ -4,10 +4,9 @@ Demarcate is a verb that means to set the limits or boundaries of, or to be sepe
 
 <strong>technologies:</strong> Mongo, Express, React, Node, JWT Authorization.
 <br><br>
-<!-- <strong>Trello:</strong> https://trello.com/b/MLlfs0ya/project-4 -->
-<strong><a href="https://trello.com/b/MLlfs0ya/project-4" target="_blank">Trello</a></strong>
-<br><br>
-<strong>Visit:</strong> https://ddemarcate.herokuapp.com/
+<strong><a href="https://trello.com/b/MLlfs0ya/project-4" target="_blank">Trello    </a></strong>
+<strong><a href="https://ddemarcate.herokuapp.com/" target="_blank">Visit</a></strong>
+
 <br><br>
 <strong>wireframes:</strong> 
 ![](https://i.postimg.cc/ryJXNVp0/AAAAA.png)
