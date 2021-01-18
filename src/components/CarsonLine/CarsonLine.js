@@ -1,11 +1,12 @@
 import React from 'react'
+import './CarsonLine.css'
 import { Link } from 'react-router-dom'
 
 function CarsonLine({ carsonLine, handleDeleteCarsonLine, user }) {
     return (
 
         <div className="added-lines">
-            <p>{carsonLine.text} <em className="username">{carsonLine.creator}</em></p>
+            <p>{carsonLine.text} <em className="carson-username">{carsonLine.creator}</em></p>
             <div className="line-options">
 
                 {user._id === carsonLine.user &&

@@ -56,7 +56,9 @@
     width: 99%;
     margin: 10px;
 }
-
+.lines-component {
+    margin-top: 3%;
+}
 .start-over-link>a {
     color: red;
 }

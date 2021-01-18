@@ -61,7 +61,7 @@ class DanaPage extends Component {
                                 rel="noopener noreferrer"
                                 >...
                                 </a>
-                            <div>
+                            <div className="lines-component">
                                 <DanaLines
                                     danaLines={this.state.danaLines}
                                     handleGetAllDanaLines={this.props.handleGetAllDanaLines}

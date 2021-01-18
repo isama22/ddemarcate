@@ -1,27 +1,21 @@
 .added-lines {
     font-size: 10px;
-    margin-top: 15px;
-    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 20px;
 }
 
 .line-options {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: beige; */
 }
 .line-options>a {
     color: red;
 }
 .username {
-    color: #854442;
+    color: orange;
     white-space: pre-wrap;
 }
-
-/* .delete {
-    cursor: pointer;
-    color: purple;
-} */

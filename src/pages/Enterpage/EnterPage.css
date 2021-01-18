@@ -28,7 +28,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding: 1%;
-
 }
 
 .enter-link {
@@ -63,8 +62,6 @@
         background-size: cover;
     }
     .follow-img {
-        /* width: 280px;
-        border: solid 1px black; */
         display: none;
     }
     .mobile-follow-img {

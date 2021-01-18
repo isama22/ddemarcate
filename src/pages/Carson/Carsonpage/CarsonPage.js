@@ -46,7 +46,7 @@ class CarsonPage extends Component {
                                 She lives alone.
                                 Spring opens like a blade there.
                                 <a href="https://www.poetryfoundation.org/poems/48636/the-glass-essay" target="_blank" rel="noopener noreferrer" className="poem-link">...</a>
-                            <div>
+                            <div className="lines-component">
                                 <CarsonLines
                                     carsonLines={this.state.carsonLines}
                                     handleGetAllCarsonLines={this.props.handleGetAllCarsonLines}
