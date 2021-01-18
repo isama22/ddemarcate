@@ -69,7 +69,7 @@ class DerksenPage extends Component {
                             >...
                                 </a>
                             </p>
-                            <div>
+                            <div className="derksen-lines-component">
                                 <DerksenLines
                                     derksenLines={this.state.derksenLines}
                                     handleGetAllDerksenLines={this.props.handleGetAllDerksenLines}

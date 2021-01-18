@@ -10,7 +10,7 @@ module.exports = {
 
 async function index(req, res) {
     const carsonLines = await CarsonLine.find({})
-    .sort({createdAt: -1})
+    .sort({createdAt: 1})
     res.status(200).json(carsonLines)
 }
 

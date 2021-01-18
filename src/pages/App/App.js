@@ -44,6 +44,7 @@ class App extends Component {
   handleSignupOrLogin = () => {
     this.setState({ user: userService.getUser() });
   }
+
   //dana functions
   handleAddDanaLine = async newDanaData => {
     const newDana = await danaLinesAPI.create(newDanaData)
@@ -75,6 +76,7 @@ class App extends Component {
     const danaLines = await danaLinesAPI.getAll()
     this.setState({ danaLines: danaLines })
   }
+
   //carson functions 
   handleAddCarsonLine = async newCarsonData => {
     const newCarson = await carsonLinesAPI.create(newCarsonData)
@@ -105,6 +107,7 @@ class App extends Component {
     const carsonLines = await carsonLinesAPI.getAll()
     this.setState({ carsonLines: carsonLines })
   }
+
   //derksen functions
   handleAddDerksenLine = async newDerksenData => {
     const newDerksen = await derksenLinesAPI.create(newDerksenData)
@@ -136,12 +139,13 @@ class App extends Component {
     const derksenLines = await derksenLinesAPI.getAll()
     this.setState({ derksenLines: derksenLines })
   }
-  //helper function//
+
+  //helper functions
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  //lifecycle functions//
+  //lifecycle functions
   async componentDidMount() {
     const danaLines = await danaLinesAPI.getAll()
     const carsonLines = await carsonLinesAPI.getAll()
@@ -166,8 +170,7 @@ class App extends Component {
             exact
             path="/enter"
             render={(props) =>
-              (<EnterPage {...props} />)
-            }
+              (<EnterPage {...props} />)}
           />
           <Route path='/login' render={(({ history }) =>
             <LoginPage
@@ -204,8 +207,7 @@ class App extends Component {
                 <Redirect to='/login' />}
           />
           <Route
-            exact path="/danapage"
-            render={({ history }) =>
+            exact path="/danapage" render={({ history }) =>
               userService.getUser() ?
                 <DanaPage
                   danaLines={this.state.danaLines}
@@ -218,8 +220,7 @@ class App extends Component {
                 <Redirect to="/login" />
             } />
           <Route
-            exact path="/editdana"
-            render={({ location }) =>
+            exact path="/editdana" render={({ location }) =>
               userService.getUser() ?
                 <DanaEdit
                   handleUpdateDanaLine={this.handleUpdateDanaLine}
@@ -241,8 +242,7 @@ class App extends Component {
                 <Redirect to='/login' />}
           />
           <Route
-            exact path="/carsonpage"
-            render={({ history }) =>
+            exact path="/carsonpage" render={({ history }) =>
               userService.getUser() ?
                 <CarsonPage
                   carsonLines={this.state.carsonLines}
@@ -255,8 +255,7 @@ class App extends Component {
                 <Redirect to="/login" />
             } />
           <Route
-            exact path="/editcarson"
-            render={({ location }) =>
+            exact path="/editcarson" render={({ location }) =>
               userService.getUser() ?
                 <CarsonEdit
                   handleUpdateCarsonLine={this.handleUpdateCarsonLine}
@@ -268,8 +267,7 @@ class App extends Component {
             }
           />
           <Route
-            exact path="/addderksenline"
-            render={() =>
+            exact path="/addderksenline" render={() =>
               userService.getUser() ?
                 <AddDerksenLine
                   handleAddDerksenLine={this.handleAddDerksenLine}
@@ -278,8 +276,7 @@ class App extends Component {
                 <Redirect to='/login' />}
           />
           <Route
-            exact path="/derksenpage"
-            render={({ history }) =>
+            exact path="/derksenpage" render={({ history }) =>
               userService.getUser() ?
                 <DerksenPage
                   derksenLines={this.state.derksenLines}
@@ -292,8 +289,7 @@ class App extends Component {
                 <Redirect to="/login" />
             } />
           <Route
-            exact path="/editderksen"
-            render={({ location }) =>
+            exact path="/editderksen" render={({ location }) =>
               userService.getUser() ?
                 <DerksenEdit
                   handleUpdateDerksenLine={this.handleUpdateDerksenLine}
