@@ -14,8 +14,8 @@ Mongo, Express, React, Node, JWT Authorization.
 
 Trello | visit
 ------------ | -------------
-https://trello.com/b/MLlfs0ya/project-4 | https://ddemarcate.herokuapp.com/
-Content column 1 | Content column 2
+<!-- https://trello.com/b/MLlfs0ya/project-4 | https://ddemarcate.herokuapp.com/
+Content column 1 | Content column 2 -->
 
 
 <br><br>
