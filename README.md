@@ -12,7 +12,7 @@ Mongo, Express, React, Node, JWT Authorization.
 <strong><a href="https://ddemarcate.herokuapp.com/" target="_blank">Visit</a></strong> -->
 
 
-Trello | visit
+<a href="https://trello.com/b/MLlfs0ya/project-4" target="_blank">Trello</a> | visit
 ------------ | -------------
 <!-- https://trello.com/b/MLlfs0ya/project-4 | https://ddemarcate.herokuapp.com/
 Content column 1 | Content column 2 -->
