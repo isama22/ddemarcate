@@ -2,7 +2,7 @@ Demarcate is a collaborative exquisite corpse style poetry app. Users can log in
 <br><br>
 Demarcate is a verb that means to set the limits or boundaries of, or to be seperated or distinguished from. It for me also evokes the idea of mark making. These poems are both limited in length and changed by the multiple visitors that leave behind their individual mark.
 
-## Technologies
+### Technologies
 Mongo, Express, React, Node, JWT Authorization.
 
 <br><br>
@@ -20,13 +20,13 @@ Content column 1 | Content column 2 -->
 
 <br><br>
 
-## Wireframes:
+### Wireframes:
 
 ![](https://i.postimg.cc/ryJXNVp0/AAAAA.png)
 
 <br><br>
 
-## Screenshots
+### Screenshots
 
 ![](https://i.postimg.cc/L8ZJbwpP/Screen-Shot-2021-01-12-at-5-45-17-PM.png)
 ![](https://i.postimg.cc/jSj5ps7V/Screen-Shot-2021-01-18-at-12-10-27-PM.png)
@@ -38,6 +38,6 @@ Content column 1 | Content column 2 -->
 
 <br><br>
 
-## Next Steps
+### Next Steps
 
 I want to add in more lines to each poem's line path, clean up the forms and the end page's UI, have all three poem routes available on each path to enable crossover, create functionality to have the app keep score of how many lines from each poem you selected and show you the poem that you chose the most lines from.
