@@ -14,7 +14,7 @@ Mongo, Express, React, Node, JWT Authorization.
 
 ### Wireframes
 
-![](https://i.postimg.cc/ryJXNVp0/AAAAA.png)
+![](https://i.postimg.cc/FFDNZPyK/ddemarcate.png)
 
 <br><br>
 
