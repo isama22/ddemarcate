@@ -14,6 +14,7 @@ class DanaPage extends Component {
         const danaLines = await danaLinesAPI.getAll()
         this.setState({ danaLines })
     }
+    
     render() {
         return (
             <>
