@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../../pages/Home/Home'
+import Contact from '../../pages/Contact/Contact'
 import EnterPage from '../../pages/Enterpage/EnterPage';
 import NavBar from '../../components/NavBar/NavBar'
 import LoginPage from '../../pages/LoginPage/LoginPage'
@@ -165,6 +166,9 @@ class App extends Component {
         <Switch>
           <Route exact path='/' render={() => (
             <Home />
+          )} />
+          <Route exact path='/contact' render={() => (
+            <Contact />
           )} />
           <Route
             exact
